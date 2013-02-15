@@ -1,0 +1,88 @@
+/*   
+
+Theme Name: Courtney Mclean
+Theme URI: http://example.com/example/
+Description: A search engine optimized website framework for WordPress.
+Author: Courtney Mclean
+Author URI: http://example.com/
+Version: 1.0
+Tags: Comma-separated tags that describe your theme
+.
+ 
+*/
+
+
+@import url('css/columns.css');
+@import url('css/courtneymclean.css');
+@import url('print.css');
+ 
+/* All three CSS files above will be loaded from
+   this single document. */
+   
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('Roboto-Thin-webfont.eot');
+    src: url('Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Thin-webfont.woff') format('woff'),
+         url('Roboto-Thin-webfont.ttf') format('truetype'),
+         url('Roboto-Thin-webfont.svg#RobotoThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto-ThinItalic';
+    src: url('Roboto-ThinItalic-webfont.eot');
+    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('Roboto-Medium-webfont.eot');
+    src: url('Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Medium-webfont.woff') format('woff'),
+         url('Roboto-Medium-webfont.ttf') format('truetype'),
+         url('Roboto-Medium-webfont.svg#RobotoMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto-MediumItalic';
+    src: url('Roboto-MediumItalic-webfont.eot');
+    src: url('Roboto-MediumItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-MediumItalic-webfont.woff') format('woff'),
+         url('Roboto-MediumItalic-webfont.ttf') format('truetype'),
+         url('Roboto-MediumItalic-webfont.svg#RobotoMediumItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto-BoldCondensedItalic';
+    src: url('Roboto-BoldCondensedItalic-webfont.eot');
+    src: url('Roboto-BoldCondensedItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-BoldCondensedItalic-webfont.woff') format('woff'),
+         url('Roboto-BoldCondensedItalic-webfont.ttf') format('truetype'),
+         url('Roboto-BoldCondensedItalic-webfont.svg#RobotoBoldCondensedItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto-Condensed';
+    src: url('Roboto-Condensed-webfont.eot');
+    src: url('Roboto-Condensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Condensed-webfont.woff') format('woff'),
+         url('Roboto-Condensed-webfont.ttf') format('truetype'),
+         url('Roboto-Condensed-webfont.svg#RobotoThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
