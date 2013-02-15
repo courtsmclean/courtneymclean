@@ -80,10 +80,11 @@
 	h1 { 
 		font-size: 2.2em; /* 46px / 16px */ 
 		letter-spacing: 1px;
-		line-height: 1em; /* 50px / 16px */ 
+		line-height: 1.3em; /* 50px / 16px */ 
 		margin-bottom: 22px;
 		 
 		}
+	h1 a, h1 a:hover {border-bottom: none;}
 	h2 { 
 		font-family: 'Roboto-Light',Helvetica,Arial,sans-serif;
 		font-size: 1.6em; 
@@ -136,11 +137,11 @@
 		color: #00748C; 
 		text-decoration: none;	
 		}
-	p img { margin: 0; }
+	p img { margin: 0; padding: 1em;}
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 
 	em { font-style: 'Roboto-LightItalic'; }
-	strong { font-weight: 'Roboto-Medium'; color: #333; }
+	strong { font-family: 'Roboto-Medium'; color: #333; }
 	small { font-size: 80%; }
 	.centre-text {text-align: center;}
 	.indent {border-left: 10px solid rgb(239,239,230); padding-left: 20px; }
@@ -150,19 +151,20 @@
 	blockquote, blockquote p {
 		font-family: 'Roboto-MediumItalic',Helvetica,Arial,sans-serif;
 		font-size: 1.2em; 
-		line-height: 1.2em; 
+		line-height: 1.4em; 
 		
 		}
 	blockquote { 
 		margin: 0px; 
 		padding: 9px 10px 0 10px; 
-		 
+		background-image: url(../images/quote-top-black.png); 
+		background-repeat: no-repeat;
 		}
 	blockquote p {
-		border-left: 10px solid rgb(239,239,230);
+		border-left: 6px solid rgb(239,239,230);
 		color:#333;
 		margin-left: 26px;
-		padding-left: 26px;
+		padding-left: 20px;
 		
 		}
 	blockquote cite { display: block; font-size: 12px; color: #555; }
@@ -321,6 +323,9 @@
 		}
 	#latest-post .container {
 		overflow: auto;
+		padding-bottom: 60px;
+		}
+	#latest-post .container {
 		padding-bottom: 20px;
 		}
 	.more-link {
@@ -420,6 +425,7 @@
 		}
 	
 	.navigation {
+		margin-bottom: 30px;
 		text-align: left;
 		width: auto;
 
