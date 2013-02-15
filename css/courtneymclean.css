@@ -418,7 +418,12 @@
 		padding-top: 20px;
 		
 		}
-		
+	
+	.navigation {
+		text-align: left;
+		width: auto;
+
+		}
 
 
 /* #SECTION: Info & Stats =============== */
