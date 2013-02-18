@@ -22,9 +22,8 @@
 
 <!-- Latest Blog Post -->
 	<section id="latest-post">
-        <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
-
-<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
+		
+		<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
           <?php /* If this is a category archive */ if (is_category()) { ?>
                 <h2>Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category:</h2>
           <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
@@ -41,6 +40,9 @@
                 <h2>Blog Archives</h2>
         <?php } ?>
         
+   
+     <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
+
         
         
 		<div class="container">
@@ -49,7 +51,8 @@
 		<!-- date & category -->
 			<div class="three col">
 				<div class="date">
-					<div class="date-category"><h5><?php the_time('F j, Y'); ?></h5>
+					<div class="date-category">
+						<h5><a href="" class=""><?php the_time('F j, Y'); ?></a></h5>
 						<ul class="tag">
 						<li><a href="" class="category-link"><?php the_category(', ') ?></a></li>
 						</ul>

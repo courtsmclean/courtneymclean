@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Archives
+*/
+get_header(); ?>
 
 
 <!-- Introduction -->
@@ -22,17 +26,36 @@
 
 <!-- Latest Blog Post -->
 	<section id="latest-post">
-        <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
-
-
 		<div class="container">
 
+	<!-- spacer --><div class="three col"></div>
+
+			<div class="seven col">
+				<?php the_post(); ?>
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+				
+				<?php get_search_form(); ?>
+				
+				<h2>Archives by Month:</h2>
+				<ul>
+					<?php wp_get_archives('type=monthly'); ?>
+				</ul>
+				
+				<h2>Archives by Subject:</h2>
+				<ul>
+					 <?php wp_list_categories(); ?>
+				</ul>
+			</div>
+
+
+   
+     <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 
 		<!-- date & category -->
 			<div class="three col">
 				<div class="date">
 					<div class="date-category">
-						<h5><a href="<?php echo get_month_link(get_the_time('Y'), get_the_time('m')); ?>"><?php the_time(__('j', 'f2')); ?> <?php the_time(__('M', 'f2')); ?> <?php the_time(__('Y', 'f2')); ?></a></h5>
+						<h5><a href="" class=""><?php the_time('F j, Y'); ?></a></h5>
 						<ul class="tag">
 						<li><a href="" class="category-link"><?php the_category(', ') ?></a></li>
 						</ul>

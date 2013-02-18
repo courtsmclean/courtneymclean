@@ -45,7 +45,7 @@ get_header(); ?>
 
 		<!-- date & category -->
 				<div class="date">
-					<div class="date-category"><p class="small">Published On <strong><?php the_time('F j, Y'); ?></strong>
+					<div class="date-category"><p class="small">Published On <a href="" class=""><strong><?php the_time('F j, Y'); ?></strong></a></p>
 					<p class="comments small"><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></p>
 					</div>	
 				</div>
