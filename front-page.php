@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Journal Page
+Template Name: Home Page
 */
 
 get_header(); ?>
@@ -21,10 +21,13 @@ get_header(); ?>
 <!-- Latest Blog Post -->
 	<section id="latest-post">
         <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
-
-
 		<div class="container">
 
+			<?php
+			$args = array( 'numberposts' => 1, 'order'=> 'DESC');
+			$postslist = get_posts( $args );
+			foreach ($postslist as $post) :  setup_postdata($post); ?> 
+					
 
 		<!-- date & category -->
 			<div class="three col">
@@ -50,7 +53,7 @@ get_header(); ?>
 					<h3><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 					<?php if ( has_post_thumbnail() ) { /* loades the post's featured thumbnail, requires Wordpress 3.0+ */ echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; } ?>
 					<div class="post-content">
-						<?php the_excerpt(); ?>
+						<?php the_content(__('Continue reading…'));?>
 					</div>
 				</div>
 			</div>
@@ -58,7 +61,7 @@ get_header(); ?>
 
 
 
-			
+		<?php endforeach; ?>
 	</div><!-- #close container -->
 
 
@@ -67,22 +70,6 @@ get_header(); ?>
 <?php endif; ?>
 	</section>
 <!-- #end Latest Blog Post -->
-
-
-
-   	<!-- page navigation -->
-		
-		<div class="container">
-			<!-- spacer --><div class="four col"></div>
-
-			<div class="seven col">
-				<div class="navigation">
-                <?php posts_nav_link(); ?>
-                </div>
-			</div>
-		</div><!-- #close container -->
-
-	<!-- #page navigation -->
 
       
                 
