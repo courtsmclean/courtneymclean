@@ -10,7 +10,14 @@ get_header(); ?>
 	<section id="introduction" class="teal-bg">
 		<div class="container">
 
+		<!-- intro image -->
+			<div class="three col"><img src="<?php the_field('journal_page_intro_image'); ?>" /></div>
+			<!-- spacer --><div class="one col"></div>
 			
+		<!-- intro text -->
+			<div class="seven col"><?php the_field('journal_page_intro_desc'); ?></div>
+
+
 		</div>
 	</section>
 <!-- #end introduction -->
