@@ -116,7 +116,7 @@
 		letter-spacing: 2px;
 		margin: 5px 0;
 		}
-	h1 a,h1 a:hover,h3 a,h3 a:hover {border-bottom: none;}
+	h1 a,h1 a:hover,h3 a,h3 a:hover,h5 a,h5 a:hover {border-bottom: none;}
 
 /* #Extra Header classes =============== */
 	
@@ -334,8 +334,8 @@
 		outline: none;
 		cursor: pointer;
 		font-family: 'Roboto-Light', Helvetica, sans-serif;
-		font-size : 1.1em; /* 18 / 16 */
-		padding: 0.8em 1.8em;
+		font-size : 0.9em; /* 18 / 16 */
+		padding: 0.5em 0.7em;
 		margin: 12px 0;
 		text-align: center;
 		text-decoration: none;
@@ -353,6 +353,7 @@
 		}
 	.more-link:link {
 		background:#00748c;
+		border: navy;
 		color: #fff;
 		}
 	.more-link:visited { 
@@ -382,13 +383,14 @@
 	ul.tag { margin-top: 20px;}
 	ul.tag li {
 		display: inline;
-		font-family: 'Roboto-ThinItalic', Helvetica, sans-serif;
+		font-family: 'Roboto-LightItalic', Helvetica, sans-serif;
 	 	font-size: 0.9em;
 	 	letter-spacing: 0.8px;
 	 	
 		}
 	ul.tag li a:link {
 		background: rgba(239,239,230,0.5);
+		border:none;
 	 	padding: 3px 5px;
 	 	text-decoration: none;
 	 	}

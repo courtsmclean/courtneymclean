@@ -70,4 +70,3 @@
 	<!-- end header -->
 	</header>
 	
-	<div id="main">

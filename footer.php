@@ -1,4 +1,3 @@
-</div><!-- #main -->
 	
 <!-- Footer -->
 	<footer class="dark-brown-bg">
