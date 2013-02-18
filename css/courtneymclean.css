@@ -323,7 +323,8 @@
 		}
 	#latest-post .container {
 		overflow: auto;
-		padding-bottom: 60px;
+		padding-bottom: 20px;
+		margin-bottom: 60px;
 		}
 	#latest-post .container:last-child {
 		padding-bottom: 20px;
