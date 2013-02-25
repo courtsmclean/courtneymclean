@@ -5,16 +5,22 @@ Template Name: Home Page
 
 get_header(); ?>
 
-
 <!-- Introduction -->
-	<section id="introduction" class="teal-bg">
+	<section id="introduction" class="aglet-bg">
 		<div class="container">
-		
+
+		<!-- intro image -->
+			<div class="three col"><img src="" class="scale-with-grid" title="" alt="" /></div>
+			<!-- spacer --><div class="one col"></div>
 			
+		<!-- intro text -->
+			<div class="seven col"></div>
+
+
 		</div>
 	</section>
 <!-- #end introduction -->
-	
+
 
 
 

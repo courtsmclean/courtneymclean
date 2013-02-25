@@ -1,24 +1,6 @@
 <?php get_header(); ?>
 
 
-<!-- Introduction -->
-	<section id="introduction" class="teal-bg">
-		<div class="container">
-
-		<!-- intro image -->
-			<div class="four col">
-			</div>
-
-		<!-- intro text -->
-			<div class="seven col">
-			</div>
-
-		</div>
-	</section>
-<!-- #end introduction -->
-	
-
-
 
 <!-- Latest Blog Post -->
 	<section id="latest-post">

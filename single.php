@@ -5,24 +5,6 @@
  */
 
 get_header(); ?>
-	
-
-<!-- Introduction -->
-	<section id="introduction" class="brown-bg">
-		<div class="container">
-
-		<!-- intro image -->
-			<div class="four col">
-			</div>
-
-		<!-- intro text -->
-			<div class="seven col">
-			</div>
-
-		</div>
-	</section>
-<!-- #end introduction -->
-	
 
 
 

@@ -4,23 +4,6 @@ Template Name: Journal Page
 */
 
 get_header(); ?>
-
-
-<!-- Introduction -->
-	<section id="introduction" class="teal-bg">
-		<div class="container">
-
-		<!-- intro image -->
-			<div class="three col"><img src="" class="scale-with-grid" title="" alt="" /></div>
-			<!-- spacer --><div class="one col"></div>
-			
-		<!-- intro text -->
-			<div class="seven col"></div>
-
-
-		</div>
-	</section>
-<!-- #end introduction -->
 	
 
 
@@ -29,13 +12,7 @@ get_header(); ?>
 	<section id="latest-post">
         <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 
-<?php echo get_post_meta($post->ID, 'songs', true); ?>
-	<h3>This post is inspired by:</h3>
-	<ul>
-		<?php foreach($songs as $song) {
-			echo '<li>'.$song.'</li>';
-			} ?>
-	</ul>
+
 		<div class="container">
 
 
