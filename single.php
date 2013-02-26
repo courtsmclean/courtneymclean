@@ -42,7 +42,7 @@ get_header(); ?>
 						<?php get_template_part( 'includes/post-nav'); ?>
 				
 						<?php // get comment template (comments.php) ?>
-						<?php comments_template(); ?>
+						<?php comments_template( '', true ); ?>
 					
 					</div>
 				</div>

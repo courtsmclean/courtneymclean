@@ -449,6 +449,55 @@
 	#single-post .date-category {border: none; margin: 10px 0}
 
 
+
+/* #SECTION: Articles/ Single post =============== */
+	.commentlist {}
+ 
+    .commentlist li {
+    	position: relative;
+        clear:both;
+        overflow:hidden;
+        list-style-type:none;
+        margin-bottom:1.5em;
+        padding:0.7335em 10px;
+        border-left: 1px solid white;
+        }
+        
+        /*general comment classes */
+	.commentlist .alt {}
+	.commentlist .odd{/*background:#eee;*/}
+	.commentlist .even{/*background: #fefefe;*/}
+		
+		/*vcard */
+	.commentlist .vcard{margin-left:50px;}
+	cite.fn{
+		font-weight:700;
+		font-style: normal;
+		}
+	.commentlist a.url{}
+	.commentlist time{float:right;}
+    .commentlist a{color:white;}
+ 
+ 	   /*comment reply link */
+    .comment-reply-link{
+    	text-decoration:none;
+        float:right;
+        background:white;
+        padding:3px 5px;
+        color:#999;
+        margin-bottom: 10px;
+        font-weight:700;
+        font-size:0.9em;
+        }
+        
+	.comment-reply-link:hover{
+		}
+
+	.comment-reply-link:focus{
+		}
+
+
+
 /* #SECTION: Info & Stats =============== */
 	#info {
 		border-right: 1px solid #DDD; 

@@ -61,7 +61,7 @@
 			<div class="eight col right">
 				<nav class="nav-collapse" role="navigation">
 					<ul>
-					<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_class' => 'nav', 'theme_location' => 'primary-menu' ) ); ?>
+						<?php wp_list_pages('sort_column=menu_order&title_li='); ?>
 					</ul>
 				</nav>
 			</div>
