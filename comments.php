@@ -72,8 +72,19 @@
         ?>"> 
             <div class="comment-meta"> 
 <?php /* If you want to use gravatars, they go somewhere around here */ ?> 
+	
+				<?php if ( function_exists( 'get_avatar' ) ) {
+				      echo get_avatar( $comment, 50);
+				   } else {
+				      //alternate gravatar code for < 2.5
+				      $grav_url = "http://www.gravatar.com/avatar.php?gravatar_id=
+				         " . md5($email) . "&default=" . urlencode($default) . "&size=" . $size;
+				      echo "<img src='$grav_url' height='80px' width='80px' />";
+				   }
+				?>
                 <span class="comment-author"><?php comment_author_link() ?></span>,  
                 <span class="comment-date"><?php comment_date() ?></span>: 
+                
             </div> 
             <div class="comment-text"> 
 <?php /* Or maybe put gravatars here. The typical thing is to float them in the CSS */  

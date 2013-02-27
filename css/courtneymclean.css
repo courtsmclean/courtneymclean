@@ -28,7 +28,7 @@
 		font-family: 'Roboto-Light',Helvetica,Arial,sans-serif; 	
 		color: #1E1E1E; 
 		text-align: center;
-		background: #fff;
+		background: #f9f9f9;
 	
 	}
 
@@ -39,7 +39,7 @@
 		background: aqua;
 	}
 
-	.container{
+	.container {
 		margin: 0px auto;
 		max-width: 1000px;
 		overflow: auto;
@@ -48,6 +48,7 @@
 		width: 88%; /* 960px / 1024px */
 	}
 
+	
 /* #Colour classes =============== */
 .black { color:rgb(0,0,0); }
 .teal { color:rgb(22,147,165); } 
@@ -62,7 +63,7 @@
 .teal-bg { background-color:#00748c; } 
 .poached_ivory-bg { background-color:rgb(216,216,192); } 
 .aglet-bg { background-color:#f0f0d8; }
-.white-bg { background-color:rgb (255,255,255); }
+.white-bg { background-color:rgb(255,255,255); }
 
 
 
@@ -70,8 +71,7 @@
 /* ==============================================================================================
 	#Typography
 ================================================================================================= */
-	h1, h2, h3, h4, h5, h6 {
-		}
+	h1, h2, h3, h4, h5, h6 {}
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
 		font-weight: inherit; 
 		text-decoration: none; 
@@ -93,10 +93,10 @@
 	
 		}
 	h3 { 
-		font-size: 1.6em; /* 18px / 16px */ 
-		line-height: 1.4em; /* 22px / 16px */ 
+		font-family: 'Roboto-Bold',Helvetica,Arial,sans-serif;
+		font-size: 1.8em; /* 18px / 16px */ 
+		line-height: 1.3em; /* 22px / 16px */ 
 		margin-bottom: 12px; 
-		font-family: 'Roboto-Medium',Helvetica,Arial,sans-serif;
 		}
 	h4 { 
 		font-size: 1.2em; /* 10px / 16px */ 
@@ -106,7 +106,7 @@
 		
 		}
 	h5 { 
-		font-family: 'Roboto-MediumItalic',Helvetica,Arial,sans-serif;
+		font-family: 'Roboto-BoldItalic',Helvetica,Arial,sans-serif;
 		font-size: 0.9em; /* 12px / 16px */ 
 		margin-bottom: 10px; 
 		}
@@ -225,9 +225,10 @@
 /* #SECTION: Header =============== */
 	header {
 	background: rgb(255,255,255);
-	border-bottom: 2px solid rgb(216,216,192);
-	margin-bottom: 30px;
-	padding: 14px 0 10px;
+	border-bottom: 1px solid #ddd;
+	margin-top: -30px;
+	padding: 16px 0 10px;
+	position: fixed;
 	z-index: 10;
 
 	}
@@ -254,18 +255,23 @@
 	.logotype {margin-left: 10px}
 
 /* #Nav Menu =============== */
-	nav {font-family: 'Roboto-Light', Helvetica, sans-serif;}
+	nav {
+		font-family: 'Roboto-Light', Helvetica, sans-serif;
+		width: 100%;
+		}
 	
 	nav ul{margin: 0 0 0 0;}
 	
 	nav li {
 		display: inline;
 		margin-left: 10%;
+		width: auto;
 		}
+		
 	nav li:first-child{margin:0;}
-	nav li a {text-decoration: none;}
+	nav li a {text-decoration: none;border: none;}
 	nav li a:visited {}
-	nav li a:hover {}
+	nav li a:hover {border: none;}
 	
 	
 	
@@ -274,7 +280,7 @@
 		width: 100%;
 		margin: 0px 0 20px 0;
 		min-height: 100px;
-		padding: 40px 0 30px;
+		padding: 80px 0 30px;
 		overflow: auto;
 		
 		}
@@ -372,14 +378,16 @@
 		}
 
 	.date {
-		border-right: 1px solid #ddd;
+		margin-top: 8px;
 		padding-right: 20px;
 		text-align: right;
 		
 		}
 	.date-category {
-		border-bottom: 1px solid #ddd;
+		border-bottom: 1px solid #f2f2f2;
 		margin-bottom: 20px;
+		padding-top: 10px;
+		
 		}
 	ul.tag { margin-top: 20px;}
 	ul.tag li {
@@ -415,6 +423,24 @@
 
 
 /* #SECTION: Articles/ Single post =============== */
+ 	.post-container{
+		margin: 0px auto;
+		max-width: 1000px;
+		overflow: auto;
+		padding: 0;
+		width: 100%;
+	}
+ 	.post-container:first-child {margin-top: 60px;}
+	
+	.post {
+		border-left:1px solid #f2f2f2;
+		margin: 0px auto;
+		height: inherit;
+		overflow: auto;
+		padding: 0 0 120px 4em;
+		}
+	.post-container:last-child .post{padding-bottom: 0px;}	
+	
 	.article-image img {
 		background-color: aqua;
 		height: 100%; 
@@ -435,22 +461,18 @@
 
 		}
 
-	#single-post .date {
-		border-top: 3px solid #777;
-		border-bottom: 1px solid #777;
-		border-right: none;
-		margin-bottom: 40px;
-		padding: 0px;
-		text-align: left;
-		
+	#single-post {
+		padding-top: 80px;
 		}
-	#single-post .date p, #single-post .date h5{display: inline;}
-	#single-post .date p.comments {float: right;}
-	#single-post .date-category {border: none; margin: 10px 0}
+	
 
 
 
 /* #SECTION: Articles/ Single post =============== */
+	.comment-container {
+		border: 1px solid #ddd;
+		padding-top: 30px;
+		}
 	.commentlist {}
  
     .commentlist li {
@@ -522,7 +544,7 @@
 	.statistic {
 		display: block;
 		font-family: 'Roboto-Thin', Helvetica, sans-serif;
-		font-size: 4em;
+		font-size: 5em;
 		line-height: 1em;
 
 		}

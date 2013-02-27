@@ -58,8 +58,8 @@
 			</div>
 
 		<!-- menu -->
-			<div class="eight col right">
-				<nav class="nav-collapse" role="navigation">
+			<div class="four col right">
+				<nav class="right nav-collapse" role="navigation">
 					<ul>
 						<?php wp_list_pages('sort_column=menu_order&title_li='); ?>
 					</ul>

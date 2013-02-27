@@ -77,5 +77,11 @@ function themeprefix_add_page_excerpt_support() {
 } 
 add_action('init', 'themeprefix_add_page_excerpt_support'); 
 
+function my_own_gravatar( $avatar_defaults ) {  
+    $myavatar = get_bloginfo('template_directory') . '/images/no_avatar.gif';  
+    $avatar_defaults[$myavatar] = 'No Avatar';  
+    return $avatar_defaults;  
+}  
+add_filter( 'avatar_defaults', 'my_own_gravatar' );   
 
 ?>

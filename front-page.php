@@ -6,7 +6,7 @@ Template Name: Home Page
 get_header(); ?>
 
 <!-- Introduction -->
-	<section id="introduction" class="aglet-bg">
+	<section id="introduction" class="teal-bg">
 		<div class="container">
 
 		<!-- intro image -->
@@ -50,11 +50,9 @@ get_header(); ?>
 		<!-- #end date & category -->
 
 
-	<!-- spacer --><div class="one col"></div>
-
 
 		<!-- article -->
-			<div class="seven col">
+			<div class="seven col post">
 				<div class="article">
 					<h3><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 					<?php if ( has_post_thumbnail() ) { /* loades the post's featured thumbnail, requires Wordpress 3.0+ */ echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; } ?>
