@@ -2,8 +2,8 @@
 
 
 
-<!-- Latest Blog Post -->
-	<section id="latest-post">
+<!-- Page Content -->
+	<section id="page-content">
 	
 		<div class="container">
 
