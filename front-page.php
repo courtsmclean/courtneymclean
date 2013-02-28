@@ -6,17 +6,9 @@ Template Name: Home Page
 get_header(); ?>
 
 <!-- Introduction -->
-	<section id="introduction" class="teal-bg">
-		<div class="container">
-
-		<!-- intro image -->
-			<div class="three col"><img src="" class="scale-with-grid" title="" alt="" /></div>
-			<!-- spacer --><div class="one col"></div>
-			
-		<!-- intro text -->
-			<div class="seven col"></div>
-
-
+	<section id="introduction" class="black-bg">
+		<div class="intro-container">
+			<p class="white">Multi-disciplinary designer with over 8 years of experience crafting beautiful design and interactive websites that focus on simplicity, functionality & empathy. Currently the Lead Digital Designer at <a href="http://hogarthww.com/" class="teal" title="Hogarth Worldwide" target="_blank">Hogarth Worldwide</a>.</p>
 		</div>
 	</section>
 <!-- #end introduction -->

@@ -9,16 +9,13 @@ get_header(); ?>
 
 <!-- Introduction -->
 	<section id="introduction" class="black-bg">
-		<div class="container">
+		<div class="intro-container">
+			<p class="white">I am a designer with a passion for creativity and a focus on delivering high quality visual and engaging user experiences and interfaces for businesses and individuals. 
 
-		<!-- intro text -->
-			<div class="twelve col">
-				<p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
-
+I do this with a creative and realistic approach, strong technical skills and a focus on your objectives. I previously worked at <a href="http://nakedcreativity.co.uk/" class="teal" title="Naked Creativity" target="_blank">Naked Creativity</a>.</p>
 		</div>
 	</section>
-<!-- end introduction -->
+<!-- #end introduction -->
 
 
 
@@ -44,10 +41,10 @@ get_header(); ?>
 						<h4>Things I Do</h4>
 					</div>
 					<div class="three col">
-						<ul>
-							<li>Home</li>				
-							<li>Articles</li>
-							<li>Projects</li>
+						<ul class="upper">
+							<li>CREATIVE CONCEPTS</li>				
+							<li>Identity &amp; Branding</li>
+							<li>Brand</li>
 							<li>Info</li>
 						</ul>
 					</div>

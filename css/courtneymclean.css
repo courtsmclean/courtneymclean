@@ -277,15 +277,15 @@
 	
 /* #SECTION: Introduction & Latest Post =============== */
 	#introduction {
+		border-bottom: 1px solid #dddddd;
 		width: 100%;
 		margin: 0px 0 20px 0;
 		min-height: 100px;
-		padding: 80px 0 30px;
+		padding: 80px 0 50px;
 		overflow: auto;
 		
 		}
 	#introduction h1{margin-bottom: 10px;}
-	#introduction p{font-size: 1.2em;}
 	
 	#intro-image h1 {
 		background-color: rgba(22,147,165,0.3);
@@ -319,6 +319,18 @@
 		margin-top: -65px;
 		width: 100%;
 		
+		}
+	.intro-container {
+		border-top: 1px solid #c9c9c9;
+		border-bottom: 1px solid #c9c9c9;
+		margin:0 auto;
+		padding-top: 10px;
+		text-align: center;
+		width: 50%;
+		}
+	.intro-container p{
+		font-family: 'Roboto-LightItalic', Helvetica, sans-serif;
+		font-size: 1.1em;
 		}
 	.journal h1{font-size: 1.6em;}
 	
@@ -390,7 +402,7 @@
 		
 		}
 	.date-category {
-		border-bottom: 1px solid #f2f2f2;
+		border-bottom: 1px solid #dddddd;
 		margin-bottom: 20px;
 		padding-top: 10px;
 		
@@ -439,11 +451,11 @@
  	.post-container:first-child {margin-top: 60px;}
 	
 	.post {
-		border-left:1px solid #f2f2f2;
+		border-left:1px solid #dddddd;
 		margin: 0px auto;
 		height: inherit;
 		overflow: auto;
-		padding: 0 0 120px 4em;
+		padding: 0 0 160px 4em;
 		}
 	.post-container:last-child .post{padding-bottom: 0px;}	
 	
@@ -543,7 +555,7 @@
 	#info article:last-child {border:none;}
 	#info article h4{margin-top: 2px;}
 	#info .wrapper img { margin: 8px 0;}
-
+	.upper {text-transform: uppercase;}
 	#stats {}
 	#stats article{border:none;}
 	#stats p{font-size:0.9em;}
@@ -567,7 +579,7 @@
 	
 /* #SECTION: Footer =============== */
 	footer {
-		background-color: #1E1E1E;
+		background-color: #000000;
 		border-top: 1px solid #464341;
 		clear: both;
 		color: #FFFFFF;
