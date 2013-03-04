@@ -281,7 +281,7 @@
 		width: 100%;
 		margin: 0px 0 20px 0;
 		min-height: 100px;
-		padding: 80px 0 50px;
+		padding: 100px 0 50px;
 		overflow: auto;
 		
 		}
@@ -487,6 +487,9 @@
 
 
 /* #SECTION: Articles/ Single post =============== */
+	#comments {
+		padding-top: 80px;
+	}
 	.comment-container {
 		border: 1px solid #ddd;
 		padding-top: 30px;
@@ -502,7 +505,24 @@
         padding:0.7335em 10px;
         border-left: 1px solid white;
         }
-        
+
+	.comments-header {margin-bottom: 0px;}
+	
+	.comment-author {
+		display: block;
+		font-family: 'Roboto-Bold', Helvetica, sans-serif;
+		font-size: 1.3em;
+		margin-bottom: 20px;
+	}
+	.comment-date {
+		color: #cccccc;
+		display: block;
+		margin-bottom: 10px; 
+    }
+	.comment-text {margin-bottom: 80px;}
+	.comment-text p {font-size: 1em;}
+ 
+
         /*general comment classes */
 	.commentlist .alt {}
 	.commentlist .odd{/*background:#eee;*/}
@@ -517,6 +537,7 @@
 	.commentlist a.url{}
 	.commentlist time{float:right;}
     .commentlist a{color:white;}
+ 
  
  	   /*comment reply link */
     .comment-reply-link{
@@ -826,6 +847,7 @@ border : 0;  }
 
 	#submit {
 		background:#00748c;
+		border: none;
 		color: #fff;
 		display: inline-block;
 		outline: none;
@@ -833,7 +855,7 @@ border : 0;  }
 		font-family: 'Roboto-Light', Helvetica, sans-serif;
 		font-size : 1.1em; /* 18 / 16 */
 		padding: 0.8em 1.8em;
-		margin: 12px 0;
+		margin: 6px 0 16px;
 		text-align: center;
 		text-decoration: none;
 		width: auto;
@@ -867,7 +889,7 @@ border : 0;  }
 		position: relative;
 		top: 1px;
 		}
-	input:focus, textarea:focus{background: rgb(240,240,216);}
+	input:focus, textarea:focus{background: rgba(240,240,216,0.4);}
 	
 	
 	

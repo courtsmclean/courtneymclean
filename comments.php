@@ -82,8 +82,8 @@
 				      echo "<img src='$grav_url' height='80px' width='80px' />";
 				   }
 				?>
-                <span class="comment-author"><?php comment_author_link() ?></span>,  
-                <span class="comment-date"><?php comment_date() ?></span>: 
+                <span class="comment-date small"><?php comment_date() ?></span>
+                <span class="comment-author"><?php comment_author_link() ?></span>  
                 
             </div> 
             <div class="comment-text"> 
@@ -168,7 +168,7 @@
                 <input type="submit" name="submit" id="sub" value="Submit" /> 
                 if you like */  
         ?> 
-        <p><button type="submit" name="submit" id="sub">Submit</button> 
+        <p><button type="submit" name="submit" id="submit">Submit</button> 
         <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>"></p> 
      
     <?php do_action('comment_form', $post->ID); ?> 
