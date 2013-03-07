@@ -145,21 +145,24 @@
      
     <?php else : ?> 
      
-        <p><input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" /> 
-        <label for="author">Name<?php if ($req) _e(' (required)'); ?></label></p> 
+        <p><label for="author">Name<?php if ($req) _e('*'); ?></label>
+        <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" /></p>
          
-        <p><input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" /> 
-        <label for="email">E-mail (will not be published)<?php if ($req) _e(' (required)'); ?></label></p> 
+        <p><label for="email">E-mail (will not be published)<?php if ($req) _e('*'); ?></label>
+        <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" /></p>
          
-        <p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" /> 
-        <label for="url">Website</label></p> 
+<!--
+       <p><label for="url">Website</label> 
+        <input type="text" name="url" id="url" value="<?php /* echo $comment_author_url; */ ?>" size="22" /><p> 
+-->
      
     <?php endif; ?> 
 
     <?php /* You might want to display this:  
         <p>XHTML: You can use these tags: <?php echo allowed_tags(); ?></p> */ ?> 
 
-        <p><textarea name="comment" id="comment" rows="5" cols="30"></textarea></p> 
+        <p><label for="url">Comment</label> 
+        <textarea name="comment" id="comment" rows="5" cols="30"></textarea></p> 
          
         <?php /* Buttons are easier to style than input[type=submit],  
                 but you can replace:  

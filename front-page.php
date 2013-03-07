@@ -7,9 +7,15 @@ get_header(); ?>
 
 <!-- Introduction -->
 	<section id="introduction" class="black-bg">
-		<div class="intro-container">
-			<p class="white">Multi-disciplinary designer with over 8 years of experience crafting beautiful design and interactive websites that focus on simplicity, functionality & empathy. Currently the Lead Digital Designer at <a href="http://hogarthww.com/" class="teal" title="Hogarth Worldwide" target="_blank">Hogarth Worldwide</a>.</p>
-		</div>
+			<div class="three col"></div>
+
+			<div class="six col"><img src="<?php bloginfo('template_directory'); ?>/images/courtneymclean_logomark.png" class="scale-with-grid" title="" alt="" />
+			
+				<div class="intro-container">
+					<p class="white">Multi-disciplinary designer with over 8 years of experience crafting beautiful design and interactive websites that focus on simplicity, functionality & empathy. Currently the Lead Digital Designer at <a href="http://hogarthww.com/" class="teal" title="Hogarth Worldwide" target="_blank">Hogarth Worldwide</a>.</p>
+				</div>
+			</div>
+
 	</section>
 <!-- #end introduction -->
 
@@ -17,7 +23,7 @@ get_header(); ?>
 
 
 <!-- Latest Blog Post -->
-	<section id="latest-post">
+	<section id="home-page" class="white-bg">
         <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 		<div class="container">
 

@@ -1,8 +1,8 @@
 	
 <!-- Footer -->
-	<footer class="dark-brown-bg">
+	<footer class="black-bg">
 		<div class="container">
-			<h1>I would love to hear from you,<br /> so drop me a line</h1>
+			<h1>I'm currently accepting freelance projects,<br /> so feel free to drop me a line</h1>
 				<a href="" class="button poached_ivory" title="">Get in Touch</a>
 			<nav role="navigation">
 				<ul class="social-links">

@@ -16,7 +16,6 @@
 	#Misc */
 	
 	
-
 /* ==============================================================================================
 	#Basic Styles
 ================================================================================================= */
@@ -50,21 +49,22 @@
 
 	
 /* #Colour classes =============== */
-.black { color:rgb(0,0,0); }
+.blacker { color:rgb(0,0,0); }
+.black { color:#1e1e1e; }
 .teal { color:rgb(22,147,165); } 
 .poached_ivory { color:rgb(216,216,192); } 
 .aglet{ color:#f0f0d8; }
 .white { color:rgb(255,255,255)!important; }
 
 /* #Background Colour classes =============== */
-.black-bg { background-color:rgb(0,0,0); }
+.blacker-bg { background-color:rgb(0,0,0); }
+.black-bg { background-color:#1e1e1e; }
 .brown-bg { background-color:#353230;}
 .dark-brown-bg { background-color:#1E1E1E;}
 .teal-bg { background-color:#00748c; } 
 .poached_ivory-bg { background-color:rgb(216,216,192); } 
 .aglet-bg { background-color:#f0f0d8; }
 .white-bg { background-color:rgb(255,255,255); }
-
 
 
 
@@ -100,7 +100,7 @@
 		}
 	h4 { 
 		font-size: 1.2em; /* 10px / 16px */ 
-		line-height: 0.75em; /* 12px / 16px */ 
+		line-height: 1.1em; /* 12px / 16px */ 
 		text-transform: uppercase;
 		margin: 30px 0 15px;
 		
@@ -226,10 +226,10 @@
 	header {
 	background: rgb(255,255,255);
 	border-bottom: 1px solid #ddd;
-	margin-top: -30px;
+	margin-top: 0px;
 	padding: 16px 0 10px;
 	position: fixed;
-	z-index: 10;
+	z-index: 100;
 
 	}
 	
@@ -279,9 +279,9 @@
 	#introduction {
 		border-bottom: 1px solid #dddddd;
 		width: 100%;
-		margin: 0px 0 20px 0;
-		min-height: 100px;
-		padding: 100px 0 50px;
+		margin: 0;
+		min-height: 180px;
+		padding: 120px 0 50px;
 		overflow: auto;
 		
 		}
@@ -322,15 +322,13 @@
 		}
 	.intro-container {
 		border-top: 1px solid #c9c9c9;
-		border-bottom: 1px solid #c9c9c9;
-		margin:0 auto;
 		padding-top: 10px;
-		text-align: center;
-		width: 50%;
+		position: fixed;
+		width: 49.16%;
 		}
 	.intro-container p{
 		font-family: 'Roboto-LightItalic', Helvetica, sans-serif;
-		font-size: 1.1em;
+		font-size: 1.3em;
 		}
 	.journal h1{font-size: 1.6em;}
 	
@@ -339,6 +337,13 @@
 		overflow: auto;
 		width: 100%;
 		
+		}
+	#home-page {
+		padding: 40px 0 20px;
+		position: relative;
+		overflow: auto;
+		width: 100%;
+		z-index: 50;
 		}
 	#latest-post {
 		padding: 40px 0 20px;
@@ -519,7 +524,11 @@
 		display: block;
 		margin-bottom: 10px; 
     }
-	.comment-text {margin-bottom: 80px;}
+	.comment-text {
+		margin-bottom: 40px;
+		border-bottom: 1px solid #f3f3f3;
+		padding-bottom: 10px;		
+	}
 	.comment-text p {font-size: 1em;}
  
 
@@ -590,67 +599,70 @@
 	
 	
 /* #SECTION: 404 Page =============== */
-	#fourofour p.statistic {font-size: 1.4em !important;}
-	#fourofour .statistic span {display:block; font-size: 9em; margin: 80px 0;}
-	#fourofour img {margin-top: 20px;}
+#fourofour p.statistic {font-size: 1.4em !important;}
+#fourofour .statistic span {display:block; font-size: 9em; margin: 80px 0;}
+#fourofour img {margin-top: 20px;}
 		
 		
 		
 	
 	
 /* #SECTION: Footer =============== */
-	footer {
-		background-color: #000000;
-		border-top: 1px solid #464341;
-		clear: both;
-		color: #FFFFFF;
-		font-size: 0.8125em; /* 13 / 16 */
-		margin: 0 auto;
-		padding: 60px 0px 40px 0px;
-	
-	}
-	footer header { background: transparent;}
-	footer .container { text-align: center;}
-	footer .col {margin-left: 0;}
-	footer h1 {
-		display: block;
-		font-family: 'Roboto-ThinItalic', helvetica, sans-serif;
-		font-size: 1.4em;
-		line-height: 1.2em;
-		margin-bottom: 10px;
-		text-transform: uppercase;
-	}
-	
-	/* Social Links - CSS Sprites */
-	.social-links {
-    width: 122px; 
-    height: 30px;
-    background: url(../images/social-links-sprite.png);
-    margin: 10px auto; 
-    padding: 0;
-    position: relative;
-    
-    }
-	.social-links li {
-    margin: 0; 
-    padding: 0; 
-    list-style: none;
-    position: absolute; 
-    top: 0;
-    
-    }
-	.social-links li, .social-links a {
-	border: 0;
-    height: 30px; 
-    display: block;
-    }
-	#twitter {left: 0; width: 30px;}
-	#linkedin {left: 46px; width: 30px;}
-	#behance {left: 92px; width: 30px;}
-	/* hover */
-    #twitter a:hover {background: transparent url(../images/social-links-sprite.png) 0 -36px no-repeat;	border: 0;}
-	#linkedin a:hover {background: transparent url(../images/social-links-sprite.png) -46px -36px no-repeat;border: 0;}
-	#behance a:hover {background: transparent url(../images/social-links-sprite.png) -92px -36px no-repeat;	border: 0;}
+footer {
+	clear: both;
+	color: #FFFFFF;
+	font-size: 0.8125em; /* 13 / 16 */
+	margin: 0 auto;
+	padding: 60px 0px 40px 0px;
+	position: relative;
+	z-index: 20;	
+}
+footer header { background: transparent;}
+footer .container { text-align: center;}
+footer .col {margin-left: 0;}
+footer h1 {
+	display: block;
+	font-family: 'Roboto-ThinItalic', helvetica, sans-serif;
+	font-size: 1.4em;
+	line-height: 1.2em;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+
+/* Social Links - CSS Sprites */
+
+.social-links {
+width: 122px; 
+height: 30px;
+background: url(../images/social-links-sprite.png);
+margin: 10px auto; 
+padding: 0;
+position: relative;
+
+}
+.social-links li {
+margin: 0; 
+padding: 0; 
+list-style: none;
+position: absolute; 
+top: 0;
+}
+
+.social-links li, .social-links a {
+border: 0;
+height: 30px; 
+display: block;
+}
+
+#twitter {left: 0; width: 30px;}
+#linkedin {left: 46px; width: 30px;}
+#behance {left: 92px; width: 30px;}
+
+/* hover */
+#twitter a:hover {background: transparent url(../images/social-links-sprite.png) 0 -36px no-repeat;	border: 0;}
+#linkedin a:hover {background: transparent url(../images/social-links-sprite.png) -46px -36px no-repeat;border: 0;}
+#behance a:hover {background: transparent url(../images/social-links-sprite.png) -92px -36px no-repeat;	border: 0;}
     
     
     
