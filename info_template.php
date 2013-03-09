@@ -112,7 +112,7 @@ get_header(); ?>
 
 			<!-- article -->
 			<article>
-				<p>Selected Clients:<br />Nike, London Southbank University, Santander, Seat, Clover, Epson, HP, LG, Vodafone, Brother, Grant Thornton, Pringles, The Sunday Times, Trafalgar Events</p>
+				<p><strong>Selected Clients:</strong><br />Nike, London Southbank University, Santander, Seat, Clover, Epson, HP, LG, Vodafone, Brother, Grant Thornton, Pringles, The Sunday Times, Trafalgar Events</p>
 			</article>
 			<!-- /end article-->
 		

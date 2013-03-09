@@ -50,6 +50,9 @@
     if ($numComments != 0) : ?> 
 
     <h2 class="comments-header"><?php _e($numComments); ?> Comments</h2> 
+    
+    
+    
     <ul id="comments"> 
      
     <?php foreach ($comments as $comment) : ?> 
