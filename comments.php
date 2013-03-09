@@ -1,3 +1,6 @@
+<div class="comment-container white-bg">
+<div class="container">
+
 <?php  
 /*     This is comment.phps by Christian Montoya, http://www.christianmontoya.com 
 
@@ -12,6 +15,8 @@
 ?> 
 
 <!-- Comments code provided by christianmontoya.com --> 
+
+
 
 <?php if (!empty($post->post_password) && $_COOKIE['wp-postpass_'.COOKIEHASH]!=$post->post_password) : ?> 
     <p id="comments-locked">Enter your password to view comments.</p> 
@@ -49,10 +54,13 @@
     /* This is a loop for printing comments */ 
     if ($numComments != 0) : ?> 
 
-    <h2 class="comments-header"><?php _e($numComments); ?> Comments</h2> 
-    
-    
-    
+<div class="three col">
+    <h2 class="comments-header right"><?php _e($numComments); ?> Comments</h2> 
+</div>	
+
+<!-- spacer --><div class="one col"></div>
+
+<div class="seven col">    
     <ul id="comments"> 
      
     <?php foreach ($comments as $comment) : ?> 
@@ -187,3 +195,7 @@
 <?php else : // Comments are closed ?> 
     <p id="comments-closed">Sorry, comments for this entry are closed at this time.</p> 
 <?php endif; ?>
+</div>
+
+</div><!-- #close container -->
+</div>

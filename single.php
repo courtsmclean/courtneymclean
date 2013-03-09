@@ -55,15 +55,7 @@ get_header(); ?>
 	</div><!-- #close container -->
 
 
-	<div class="comment-container white-bg">
-		<div class="container">
-			<!-- spacer --><div class="four col"></div>	
-			<div class="seven col">
-				<?php // get comment template (comments.php) ?>
-				<?php comments_template( '', true ); ?>
-			</div>
-		</div><!-- #close container -->
-	</div>
+	<?php comments_template( '', true ); ?>
 
 
 
