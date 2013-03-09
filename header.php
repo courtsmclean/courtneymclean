@@ -53,8 +53,7 @@
 		
 		<!-- logo -->
 			<div class="three col">
-				<a href="<?php echo home_url(); ?>" title=""><img src="<?php bloginfo('template_directory'); ?>/images/courtneymclean_logomark.png" class="scale-with-grid" title="" alt="" /></a>
-				<a href="<?php echo home_url(); ?>" title=""><img src="<?php bloginfo('template_directory'); ?>/images/courtneymclean_logotype.png" class="scale-with-grid right" title="" alt="" /></a>
+				<a href="<?php echo home_url(); ?>" title=""><img src="<?php bloginfo('template_directory'); ?>/images/courtneymclean_logotype.png" class="scale-with-grid" title="" alt="" /></a>
 			</div>
 
 		<!-- menu -->

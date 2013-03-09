@@ -28,7 +28,6 @@
 		color: #1E1E1E; 
 		text-align: center;
 		background: #f9f9f9;
-	
 	}
 
 	#wrapper {
@@ -226,7 +225,7 @@
 	header {
 	background: rgb(255,255,255);
 	border-bottom: 1px solid #ddd;
-	margin-top: 0px;
+	margin-top: -30px;
 	padding: 16px 0 10px;
 	position: fixed;
 	z-index: 100;
@@ -277,15 +276,34 @@
 	
 /* #SECTION: Introduction & Latest Post =============== */
 	#introduction {
-		border-bottom: 1px solid #dddddd;
 		width: 100%;
 		margin: 0;
-		min-height: 180px;
-		padding: 120px 0 50px;
+		min-height: 360px;
+		padding:0px;
 		overflow: auto;
-		
 		}
-	#introduction h1{margin-bottom: 10px;}
+	#introduction h1{
+		font-size: 2.5em;
+		margin-bottom: 10px;
+		}
+	#intro-wrapper {
+		padding: 130px 0px 100px;
+		position: fixed;
+		width: 100%;
+		}
+	.home{
+		background: url(../images/stars.jpg);
+	}
+	.intro-text {
+		border-top: 1px solid #c9c9c9;
+		margin: 0 auto;
+		padding-top: 10px;
+		width: 49.16%;
+		}
+	.intro-container p{
+		font-family: 'Roboto-LightItalic', Helvetica, sans-serif;
+		font-size: 1.3em;
+		}
 	
 	#intro-image h1 {
 		background-color: rgba(22,147,165,0.3);
@@ -302,7 +320,6 @@
 		text-align: center;
 		text-transform: uppercase;
 /* 		text-shadow:0 1px 0 #; */
-		
 		}
 	#intro-image figure {margin: 0px;}
 	#intro-image figcaption {
@@ -318,17 +335,6 @@
 		height: auto; 
 		margin-top: -65px;
 		width: 100%;
-		
-		}
-	.intro-container {
-		border-top: 1px solid #c9c9c9;
-		padding-top: 10px;
-		position: fixed;
-		width: 49.16%;
-		}
-	.intro-container p{
-		font-family: 'Roboto-LightItalic', Helvetica, sans-serif;
-		font-size: 1.3em;
 		}
 	.journal h1{font-size: 1.6em;}
 	
@@ -336,20 +342,21 @@
 		padding: 80px 0 20px;
 		overflow: auto;
 		width: 100%;
-		
 		}
-	#home-page {
-		padding: 40px 0 20px;
+
+	#main-content {
+		background: #f9f9f9;
+		padding: 80px 0 20px;
 		position: relative;
 		overflow: auto;
 		width: 100%;
 		z-index: 50;
 		}
+		
 	#latest-post {
 		padding: 40px 0 20px;
 		overflow: auto;
 		width: 100%;
-		
 		}
 	#latest-post .container {
 		overflow: auto;
@@ -453,7 +460,7 @@
 		padding: 0;
 		width: 100%;
 	}
- 	.post-container:first-child {margin-top: 60px;}
+	.post-container:first-child {padding-top: 40px;}	
 	
 	.post {
 		border-left:1px solid #dddddd;
@@ -468,22 +475,18 @@
 		background-color: aqua;
 		height: 100%; 
 		width: 100%;
-		
 		}
 	#respond {
 		border-top: 1px solid #DDD;
 		margin-top: 40px;
 		padding-top: 20px;
-		
 		}
 	
 	.navigation {
 		margin-bottom: 30px;
 		text-align: left;
 		width: auto;
-
 		}
-
 	#single-post {
 		padding-top: 80px;
 		}
@@ -496,7 +499,7 @@
 		padding-top: 80px;
 	}
 	.comment-container {
-		border: 1px solid #ddd;
+		border-top: 1px solid #ddd;
 		padding-top: 30px;
 		}
 	.commentlist {}
@@ -586,7 +589,14 @@
 	#info article h4{margin-top: 2px;}
 	#info .wrapper img { margin: 8px 0;}
 	.upper {text-transform: uppercase;}
-	#stats {}
+	#stats {
+		opacity: 0.06;
+		-webkit-transition: all 0.8s ease;
+		-moz-transition: all 0.8s ease;
+		-o-transition: all 0.8s ease;
+		transition: all 0.8s ease;
+}
+	#stats:hover {opacity: 1;}
 	#stats article{border:none;}
 	#stats p{font-size:0.9em;}
 	.statistic {
@@ -594,7 +604,6 @@
 		font-family: 'Roboto-Thin', Helvetica, sans-serif;
 		font-size: 5em;
 		line-height: 1em;
-
 		}
 	
 	
@@ -1075,6 +1084,26 @@ strong.code {
 		top: 1px;
 		}
 
+/*  MEDIA OBJECTS ============================================================================= */
+@media only screen and (max-width: 720px) {
+
+	.page-template-front-page-php #introduction {
+		display: none;
+	}
+	.post {
+		border: none;
+		padding: 0;
+	}
+	.date {
+		padding: 0;
+	}
+	.date-category {
+		border: 0;
+		text-align: left;
+		float: left;
+	}
+	
+}
 
 
 

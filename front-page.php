@@ -6,16 +6,15 @@ Template Name: Home Page
 get_header(); ?>
 
 <!-- Introduction -->
-	<section id="introduction" class="black-bg">
-			<div class="three col"></div>
-
-			<div class="six col"><img src="<?php bloginfo('template_directory'); ?>/images/courtneymclean_logomark.png" class="scale-with-grid" title="" alt="" />
+	<section id="introduction">
+		<div id="intro-wrapper" class="home">
 			
-				<div class="intro-container">
-					<p class="white">Multi-disciplinary designer with over 8 years of experience crafting beautiful design and interactive websites that focus on simplicity, functionality & empathy. Currently the Lead Digital Designer at <a href="http://hogarthww.com/" class="teal" title="Hogarth Worldwide" target="_blank">Hogarth Worldwide</a>.</p>
-				</div>
-			</div>
+		<div class="intro-text">
+			<p class="white">I'm Courtney Mclean, a multi-disciplinary designer with over 8 years of experience crafting beautiful design and interactive websites that focus on simplicity, functionality & empathy. Currently the lead digital designer at <a href="http://hogarthww.com/" class="teal" title="Hogarth Worldwide" target="_blank">Hogarth Worldwide</a>.</p>
+		</div>
+		</div>
 
+		</div><!-- #end intro-wrapper -->
 	</section>
 <!-- #end introduction -->
 
@@ -23,7 +22,7 @@ get_header(); ?>
 
 
 <!-- Latest Blog Post -->
-	<section id="home-page" class="white-bg">
+	<section id="main-content">
         <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 		<div class="container">
 

@@ -7,14 +7,12 @@ get_header(); ?>
 	
 
 
-
 <!-- Latest Blog Post -->
-<section id="latest-post">
+<div id="main-content">
 	<div class="container">
         <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 
 		<div class="post-container">
-
 
 		<!-- date & category -->
 			<div class="three col date">
@@ -27,9 +25,6 @@ get_header(); ?>
 					<p class="small"><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></p>
 			</div>
 		<!-- #end date & category -->
-
-
-
 
 		<!-- post -->
 				<div class="seven col post">
@@ -50,7 +45,7 @@ get_header(); ?>
 		<?php endwhile; ?>
 		<?php endif; ?>
 		</div><!-- #close container -->
-	</section>
+	</div>
 <!-- #end Latest Blog Post -->
 
 

@@ -3,7 +3,7 @@
 
 
 <!-- Page Content -->
-	<section id="page-content">
+	<section id="main-content">
 	
 		<div class="container">
 
@@ -35,7 +35,7 @@
      <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 		<div class="container">
 
-
+		<div class="post-container">
 		<!-- date & category -->
 			<div class="three col">
 				<div class="date">
@@ -65,7 +65,7 @@
 				</div>
 			</div>
 		<!-- #end article -->
-
+		</div><!-- #close post-container -->
 
 
 			
