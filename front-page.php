@@ -38,7 +38,7 @@ get_header(); ?>
 					<div class="date-category">
 						<h5><a href="<?php echo get_month_link(get_the_time('Y'), get_the_time('m')); ?>"><?php the_time(__('j', 'f2')); ?> <?php the_time(__('M', 'f2')); ?> <?php the_time(__('Y', 'f2')); ?></a></h5>
 						<ul class="tag">
-						<li><a href="" class="category-link"><?php the_category(', ') ?></a></li>
+						<li><?php the_category(', ') ?></li>
 						</ul>
 					</div>	
 					<p><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></p>
