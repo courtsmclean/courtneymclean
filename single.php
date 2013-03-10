@@ -13,7 +13,6 @@ get_header(); ?>
         <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 
 			<h1 class="white"><?php the_title(); ?></h1>
-		</div>
 
 		</div><!-- #end intro-wrapper -->
 	</section>
