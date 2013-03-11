@@ -5,12 +5,12 @@
 ==================================================
 	#Basic Styles / Colours
 	#Typography
-	#Site Styles
-		#Logo
-		#Menu
 		#Links
 		#Lists
 		#Images
+	#Site Styles
+		#Logo
+		#Menu
 		#Buttons
 		#Forms
 	#Misc
@@ -48,22 +48,22 @@
 
 	
 /* #Colour classes =============== */
-.blacker { color:rgb(0,0,0); }
-.black { color:#1e1e1e; }
-.teal { color:rgb(22,147,165); } 
-.poached_ivory { color:rgb(216,216,192); } 
-.aglet{ color:#f0f0d8; }
-.white { color:rgb(255,255,255)!important; }
+	.blacker { color:rgb(0,0,0); }
+	.black { color:#1e1e1e; }
+	.teal { color:rgb(22,147,165); } 
+	.poached_ivory { color:rgb(216,216,192); } 
+	.aglet{ color:#f0f0d8; }
+	.white { color:rgb(255,255,255)!important; }
 
 /* #Background Colour classes =============== */
 .blacker-bg { background-color:rgb(0,0,0); }
-.black-bg { background-color:#1e1e1e; }
-.brown-bg { background-color:#353230;}
-.dark-brown-bg { background-color:#1E1E1E;}
-.teal-bg { background-color:#00748c; } 
-.poached_ivory-bg { background-color:rgb(216,216,192); } 
-.aglet-bg { background-color:#f0f0d8; }
-.white-bg { background-color:rgb(255,255,255); }
+	.black-bg { background-color:#1e1e1e; }
+	.brown-bg { background-color:#353230;}
+	.dark-brown-bg { background-color:#1E1E1E;}
+	.teal-bg { background-color:#00748c; } 
+	.poached_ivory-bg { background-color:rgb(216,216,192); } 
+	.aglet-bg { background-color:#f0f0d8; }
+	.white-bg { background-color:rgb(255,255,255); }
 
 
 
@@ -75,7 +75,6 @@
 		font-weight: inherit; 
 		text-decoration: none; 
 		}
-	
 	h1 { 
 		font-size: 1.8em; /* 46px / 16px */ 
 		font-style: normal;
@@ -83,7 +82,6 @@
 		letter-spacing: 1px;
 		line-height: 1.3em; /* 50px / 16px */ 
 		margin-bottom: 22px;
-		 
 		}
 	h2 { 
 		font-size: 1.6em; 
@@ -91,7 +89,6 @@
 		font-weight: 300;
 		line-height: 1.5em; 
 		margin-bottom: 10px; 
-	
 		}
 	h3 { 
 		font-size: 1.8em; /* 18px / 16px */ 
@@ -233,13 +230,13 @@
 /* #Images
 ================================================== */
 
-img.scale-with-grid {
+	img.scale-with-grid {
 		border : 0;
 		max-width: 100%;
-		height: auto; }
-
-img.floatleft { float: left; margin: 0 10px 0 0; }
-img.floatright { float: right; margin: 0 0 0 10px; }
+		height: auto; 
+		}	
+	img.floatleft { float: left; margin: 0 10px 0 0; }
+	img.floatright { float: right; margin: 0 0 0 10px; }
 
 
 

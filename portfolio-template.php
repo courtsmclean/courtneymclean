@@ -23,7 +23,6 @@ get_header(); ?>
 			<!-- article -->
 			<div class="six col">	
 				<div class="portfolio-image black-bg">
-					<?php the_field('portfolio_image_01'); ?>
 				</div>
 			</div>
 			<!-- /end article-->
