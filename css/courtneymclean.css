@@ -350,7 +350,6 @@
 		width: 100%;
 		}
 
-	.home{background: url(../images/stars.jpg);}
 	.intro-text {
 		border-top: 1px solid #c9c9c9;
 		margin: 0 auto;
@@ -386,6 +385,15 @@
 		height: auto; 
 		margin-top: -65px;
 		width: 100%;
+		}
+	#bg {
+		position: fixed;
+		top: -50%;
+		left: -50%;
+		width: 200%;
+		height: 200%;
+		display: block;
+		z-index: -1000;
 		}
 	.journal h1{font-size: 1.6em;}
 	
