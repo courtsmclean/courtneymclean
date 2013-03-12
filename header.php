@@ -35,6 +35,9 @@
 	<!-- Stylesheets -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
 
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300,500,700,300italic,500italic,700italic|Roboto+Condensed:300italic,700' rel='stylesheet' type='text/css'>
+
 	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
 	<script src="js/modernizr-2.5.3-min.js"></script>
       

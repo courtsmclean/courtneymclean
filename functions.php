@@ -71,17 +71,28 @@ function wpfme_IEhtml5_shim () {
 }
 add_action('wp_head', 'wpfme_IEhtml5_shim');
 
+
  //Add Excerpts to Pages 
 function themeprefix_add_page_excerpt_support() {
  add_post_type_support( 'page', 'excerpt' ); 
 } 
 add_action('init', 'themeprefix_add_page_excerpt_support'); 
 
+
+//Add Custom Gravatar image
 function my_own_gravatar( $avatar_defaults ) {  
     $myavatar = get_bloginfo('template_directory') . '/images/no_avatar.gif';  
     $avatar_defaults[$myavatar] = 'No Avatar';  
     return $avatar_defaults;  
 }  
 add_filter( 'avatar_defaults', 'my_own_gravatar' );   
+
+
+//Add favicon to header 
+add_action( 'wp_head', 'ilc_favicon');
+function ilc_favicon(){
+        echo "<link rel='shortcut icon' href='" . get_stylesheet_directory_uri() . "/favicon.ico' />" . "\n";
+}
+
 
 ?>

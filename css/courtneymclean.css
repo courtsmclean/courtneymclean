@@ -23,13 +23,13 @@
 ================================================================================================= */
 
 	body { 
-		margin: 0 auto;
-		padding: 0;
+		background: #1E1E1E;
+		color: #1E1E1E; 
 		font-size: 100%/1.6; 
 		font-family: 'Roboto',Helvetica,Arial,sans-serif; 	
-		color: #1E1E1E; 
+		margin: 0 auto;
+		padding: 0;
 		text-align: center;
-		background: #f9f9f9;
 	}
 	#wrapper {
 		width: 100%;
@@ -76,6 +76,7 @@
 		text-decoration: none; 
 		}
 	h1 { 
+		font-family: 'Roboto Medium',Helvetica,Arial,sans-serif; 	
 		font-size: 1.8em; /* 46px / 16px */ 
 		font-style: normal;
 		font-weight: 500;
@@ -84,6 +85,7 @@
 		margin-bottom: 22px;
 		}
 	h2 { 
+		font-family: 'Roboto',Helvetica,Arial,sans-serif; 	
 		font-size: 1.6em; 
 		font-style: normal;
 		font-weight: 300;
@@ -311,6 +313,7 @@
 
 /* #Nav Menu =============== */
 	nav {
+		font-family: 'Roboto',Helvetica,Arial,sans-serif; 	
 		font-style: normal;
 		font-weight: 300;
 		width: 100%;
@@ -345,6 +348,7 @@
 		margin-bottom: 10px;
 		}
 	#intro-wrapper {
+		background: rgba(0,0,0,0.5);
 		padding: 130px 0px 100px;
 		position: fixed;
 		width: 100%;
@@ -388,13 +392,14 @@
 		}
 	#bg {
 		position: fixed;
-		top: -50%;
+		/* top: -50%; */
 		left: -50%;
 		width: 200%;
 		height: 200%;
 		display: block;
 		z-index: -1000;
 		}
+	#bg .scale-with-grid{width: 50%;}
 	.journal h1{font-size: 1.6em;}
 	
 	#page-content {
@@ -631,10 +636,10 @@
 
 
 /* #SECTION: Portfolio =============== */
+	#portfolio {}
 	#portfolio p img{padding: 0;}
-	.portfolio-image {
-	}
-
+	.portfolio-image img{ max-width:100%; max-height:100%;}
+	.row-one {}
 	.row-one .portfolio-image {height: 300px;}
 	.row-two .portfolio-image {height: 240px;}
 	.row-three .portfolio-image {height: 180px;}
@@ -668,7 +673,7 @@
 	#info .wrapper img { margin: 8px 0;}
 	.upper {text-transform: uppercase;}
 	#stats {
-		opacity: 0.06;
+		opacity: 0.09;
 		-webkit-transition: all 0.8s ease;
 		-moz-transition: all 0.8s ease;
 		-o-transition: all 0.8s ease;
@@ -677,12 +682,14 @@
 	#stats:hover {opacity: 1;}
 	#stats article{border:none;}
 	#stats p{font-size:0.9em;}
+	#stats img{margin-bottom:-30px;}
 	.statistic {
 		display: block;
 		font-size: 5em;
 		font-style: normal;
 		font-weight: 300;
 		line-height: 1em;
+		padding-top: 40px;
 		}
 	
 	
@@ -702,7 +709,6 @@ footer {
 	font-size: 0.8125em; /* 13 / 16 */
 	margin: 0 auto;
 	padding: 60px 0px 40px 0px;
-	position: relative;
 	z-index: 20;	
 }
 footer header { background: transparent;}
@@ -710,6 +716,7 @@ footer .container { text-align: center;}
 footer .col {margin-left: 0;}
 footer h1 {
 	display: block;
+	font-family: 'Roboto',Helvetica,Arial,sans-serif; 	
 	font-style: italic;
 	font-weight: 300;
 	font-size: 1.4em;

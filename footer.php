@@ -6,9 +6,9 @@
 				<a href="" class="button teal" title="">Get in Touch</a>
 			<nav role="navigation">
 				<ul class="social-links">
-				    <li id="twitter"><a href="#1"></a></li>
-				    <li id="linkedin"><a href="#2"></a></li>
-				    <li id="behance"><a href="#3"></a></li>
+				    <li id="twitter"><a href="https://twitter.com/courtsmclean" target="_blank"></a></li>
+				    <li id="linkedin"><a href="http://uk.linkedin.com/in/courtsmclean" target="_blank"></a></li>
+				    <li id="behance"><a href="http://www.behance.net/courtsmclean" target="_blank"></a></li>
 				</ul>	
 			</nav>
 		

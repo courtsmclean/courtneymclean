@@ -23,6 +23,7 @@ get_header(); ?>
 			<!-- article -->
 			<div class="six col">	
 				<div class="portfolio-image black-bg">
+				<img class="scale-with-grid" src="<?php bloginfo('template_directory'); ?>/images/stars.jpg" />
 				</div>
 			</div>
 			<!-- /end article-->
