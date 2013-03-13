@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-<section id="latest-post">
+<section id="main-content">
 	<div class="container">
 
 

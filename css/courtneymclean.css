@@ -76,11 +76,11 @@
 		text-decoration: none; 
 		}
 	h1 { 
-		font-family: 'Roboto Medium',Helvetica,Arial,sans-serif; 	
+		font-family: 'Roboto',Helvetica,Arial,sans-serif; 	
 		font-size: 1.8em; /* 46px / 16px */ 
 		font-style: normal;
 		font-weight: 500;
-		letter-spacing: 1px;
+		letter-spacing: 0.06em;
 		line-height: 1.3em; /* 50px / 16px */ 
 		margin-bottom: 22px;
 		}
@@ -339,7 +339,7 @@
 	#introduction {
 		width: 100%;
 		margin: 0;
-		min-height: 320px;
+		min-height: 300px;
 		padding:0px;
 		overflow: auto;
 		}
@@ -486,7 +486,6 @@
 	 	font-size: 0.9em;
 		font-style: italic;
 		font-weight: 300;
-	 	letter-spacing: 0.8px;
 	 	
 		}
 	ul.tag li a:link {
@@ -637,10 +636,14 @@
 
 /* #SECTION: Portfolio =============== */
 	#portfolio {}
-	#portfolio p img{padding: 0;}
-	.portfolio-image img{ max-width:100%; max-height:100%;}
-	.row-one {}
-	.row-one .portfolio-image {height: 300px;}
+	#portfolio p {margin: 0;}
+	#portfolio p img{padding: 0; width:100%;}
+	.portfolio-image img{max-width:100%; max-height:100%;}
+	.portfolio-image p a {opacity: 0.6; border: none;}
+	.portfolio-image p a:hover {opacity: 1;}
+
+	.row-one {overflow: auto; width: 100%;}
+	.row-one .portfolio-image {min-height: 200px; width:100%;}
 	.row-two .portfolio-image {height: 240px;}
 	.row-three .portfolio-image {height: 180px;}
 	.row-four .portfolio-image {height: 100px;}

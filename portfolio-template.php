@@ -22,15 +22,16 @@ get_header(); ?>
 		<div class="row-one">
 			<!-- article -->
 			<div class="six col">	
-				<div class="portfolio-image black-bg">
-				<img class="scale-with-grid" src="<?php bloginfo('template_directory'); ?>/images/stars.jpg" />
+				<div class="portfolio-image">
+					<p><?php the_field('project_1'); ?></p>
 				</div>
 			</div>
 			<!-- /end article-->
 
 			<!-- article -->
 			<div class="six col">	
-				<div class="portfolio-image black-bg">	
+				<div class="portfolio-image">	
+					<p><?php the_field('project_2'); ?></p>
 				</div>
 			</div>
 			<!-- /end article-->
@@ -40,58 +41,30 @@ get_header(); ?>
 		<div class="row-two">
 			<!-- article -->
 			<div class="four col">	
-				<div class="portfolio-image black-bg">	
+				<div class="portfolio-image">	
+					<p><?php the_field('project_3'); ?></p>
 				</div>
 			</div>
 			<!-- /end article-->
 
 			<!-- article -->
 			<div class="four col">	
-				<div class="portfolio-image black-bg">	
+				<div class="portfolio-image">	
+					<p><?php the_field('project_4'); ?></p>
 				</div>
 			</div>
 			<!-- /end article-->
 
 			<!-- article -->
 			<div class="four col">	
-				<div class="portfolio-image black-bg">	
+				<div class="portfolio-image">	
+					<p><?php the_field('project_5'); ?></p>
 				</div>
 			</div>
 			<!-- /end article-->
 		</div><!-- /end row-->
 
 
-		<div class="row-three">
-			<!-- article -->
-			<div class="three col">	
-				<div class="portfolio-image teal-bg">	
-				</div>
-			</div>
-			<!-- /end article-->
-
-			<!-- article -->
-			<div class="three col">	
-				<div class="portfolio-image black-bg">	
-				</div>
-			</div>
-			<!-- /end article-->
-
-			<!-- article -->
-			<div class="three col">	
-				<div class="portfolio-image black-bg">	
-				</div>
-			</div>
-			<!-- /end article-->
-
-			<!-- article -->
-			<div class="three col">	
-				<div class="portfolio-image black-bg">	
-				</div>
-			</div>
-			<!-- /end article-->
-		</div><!-- /end row-->
-
-		
 		</section>
 	<!-- /end Portfolio -->
 
