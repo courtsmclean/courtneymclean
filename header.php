@@ -56,7 +56,7 @@
 		
 		<!-- logo -->
 			<div class="three col">
-				<a href="<?php echo home_url(); ?>" class="logo" title="Courtney Mclean Graphic Design Logo"><img src="<?php bloginfo('template_directory'); ?>/images/courtneymclean_logotype.png" class="scale-with-grid" alt="" /></a>
+				<a href="<?php echo home_url(); ?>" class="logo" title="Courtney Mclean Graphic Design Logo"><img src="<?php bloginfo('template_directory'); ?>/images/courtneymclean_logotype_v2.png" class="scale-with-grid" alt="" /></a>
 			</div>
 
 		<!-- menu -->
