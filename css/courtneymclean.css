@@ -421,7 +421,7 @@
 
 	#main-content {
 		background: #f9f9f9;
-		padding: 80px 0 20px;
+		padding: 120px 0 20px;
 		position: relative;
 		overflow: auto;
 		width: 100%;
@@ -529,7 +529,7 @@
 		margin: 0px auto;
 		max-width: 1000px;
 		overflow: auto;
-		padding: 0;
+		padding: 60px 0 0;
 		width: 100%;
 	}
 /* 	.post-container:first-child {padding-top: 40px;}	 */

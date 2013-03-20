@@ -55,7 +55,10 @@ get_header(); ?>
 		<!-- article -->
 			<div class="seven col post">
 				<div class="article">
-					<h3><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+					<h3><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h3><?php
+global $more;
+$more = 0;
+?>
 					<?php if ( has_post_thumbnail() ) { /* loades the post's featured thumbnail, requires Wordpress 3.0+ */ echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; } ?>
 					<div class="post-content">
 						<?php the_content(__('Continue reading…'));?>
