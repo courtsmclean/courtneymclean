@@ -132,7 +132,8 @@
 		font-size: 1.1em; /* 13px / 16px */ 
 		font-style: normal;
 		font-weight: 300;
-		line-height: 1.6em;
+		letter-spacing: 0.05em;
+		line-height: 1.8em;
 		margin: 0 0 20px 0; 
 		}
 	p a { 
@@ -165,15 +166,22 @@
 	a:hover, a:focus { 
 		color: rgb(22,147,165);
 		border-bottom: 1px dotted rgb(22,147,165);
-		
 		}
-	p a, p a:visited { line-height: inherit; }
+	p a, p a:visited { 
+		color: rgb(22,147,165);
+		border-bottom: 1px dotted rgb(22,147,165);
+		line-height: inherit; 
+		}
 	
 
 
 /* #Lists
 ================================================== */
-	ul, ol { margin-bottom: 20px; }
+	ul, ol { 
+	margin-bottom: 20px;
+	font-size: 1.1em;
+	font-weight: 300;
+	}
 	ul { list-style: none outside; }
 	ol { list-style: decimal; }
 	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
@@ -313,7 +321,8 @@
 
 /* #Nav Menu =============== */
 	nav {
-		font-family: 'Roboto',Helvetica,Arial,sans-serif; 	
+		font-family: 'Roboto',Helvetica,Arial,sans-serif; 
+		font-size: 0.9em;	
 		font-style: normal;
 		font-weight: 300;
 		width: 100%;
@@ -342,6 +351,8 @@
 		min-height: 300px;
 		padding:0px;
 		overflow: auto;
+		position: relative;
+		z-index: -1000;
 		}
 	#introduction h1{
 		font-size: 2.5em;
@@ -523,14 +534,14 @@
 	}
 /* 	.post-container:first-child {padding-top: 40px;}	 */
 	
-	.post {
+	.post, .singlepost {
 		border-left:1px solid #dddddd;
 		margin: 0px auto;
-		height: inherit;
 		overflow: auto;
 		padding: 0 0 160px 4em;
 		}
 	.post-container:last-child .post{padding-bottom: 0px;}	
+	.post-container:last-child .singlepost{padding-bottom: 60px;}	
 	
 	.article-image img {
 		background-color: aqua;
@@ -538,9 +549,11 @@
 		width: 100%;
 		}
 	#respond {
+/*
 		border-top: 1px solid #DDD;
 		margin-top: 40px;
 		padding-top: 20px;
+*/
 		}
 	
 	.navigation {
@@ -559,7 +572,7 @@
 	.comment-container {
 		border-top: 1px solid #ddd;
 		}
-	#comments {	padding-top: 110px;}
+	#comments, #comments-form {	padding-top: 110px;}
 	.commentlist {}
  
     .commentlist li {
@@ -573,7 +586,6 @@
         }
 
 	.comments-header {
-		float: right;
 		margin-bottom: 0px;
 		padding-top: 110px;
 		}

@@ -114,15 +114,21 @@
     </ul> 
      
     <?php endif; ?> 
+</div>
+
      
 <?php else :  
 
     /* No comments at all means a simple message instead */  
 ?> 
 
-    <h2 class="comments-header">No Comments Yet</h2> 
+<div class="three col">
+	<div class="right">
+    	<h2 id="respond" class="comments-header">No Comments Yet</h2> 
+    	<p>You can be the first to comment!</p> 
+    </div>
+</div>
 
-    <p>You can be the first to comment!</p> 
      
 <?php endif; ?> 
 
@@ -135,7 +141,11 @@
     </div> 
  */ ?> 
 
+    <!-- spacer --><div class="one col"></div>
+
+<div class="seven col">         
     <div id="comments-form"> 
+     
      
     <h2 id="comments-header">Leave a comment</h2> 
      
@@ -143,6 +153,8 @@
         <p id="comments-blocked">You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to= 
         <?php the_permalink(); ?>">logged in</a> to post a comment.</p> 
     <?php else : ?> 
+
+
 
     <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform"> 
 
@@ -169,6 +181,8 @@
      
     <?php endif; ?> 
 
+
+
     <?php /* You might want to display this:  
         <p>XHTML: You can use these tags: <?php echo allowed_tags(); ?></p> */ ?> 
 
@@ -189,6 +203,7 @@
 
     </form> 
     </div> 
+</div>
 
 <?php endif; // If registration required and not logged in ?> 
 

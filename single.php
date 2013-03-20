@@ -38,10 +38,12 @@ get_header(); ?>
 			<!-- #end date & category -->
 
 			<!-- article -->
-			<div class="seven col post">
+			<div class="seven col singlepost">
 				<div class="article">
-					<?php if ( has_post_thumbnail() ) { /* loads the post's featured thumbnail, requires Wordpress 3.0+ */ echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; } ?>
-					<div class="post-content">
+<?php
+global $more;
+$more = 0;
+?>					<div class="post-content">
 						<?php the_content(__('Continue reading…'));?>
 						<?php // get post-nav.php (next/prev post link) ?>
 						<?php get_template_part( 'includes/post-nav'); ?>				
