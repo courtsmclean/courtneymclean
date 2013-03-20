@@ -10,6 +10,12 @@ get_header(); ?>
 <!-- Introduction -->
 	<section id="introduction">
 		<div id="intro-wrapper" class="black-bg">
+
+		<div id="intro_image">
+			<img src="<?php the_field('intro_image'); ?>" class="scale-with-grid" />
+		</div>
+
+
         <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 
 			<h1 class="white"><?php the_title(); ?></h1>
@@ -21,7 +27,7 @@ get_header(); ?>
 
 
 <!-- Latest Blog Post -->
-<section id="main-content">
+<section id="single-main-content">
 	<div class="container">
 		<div class="post-container">
 

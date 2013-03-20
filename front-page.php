@@ -6,16 +6,16 @@ Template Name: Home Page
 get_header(); ?>
 
 <!-- Introduction -->
-	<section id="introduction">
-
-		<div id="bg">
+	<section id="home_intro">
+		
+		<div id="intro_image">
 			<img src="<?php the_field('intro_image'); ?>" class="scale-with-grid" />
 		</div>
 
-		<!-- #end intro-wrapper -->
 		<div id="intro-wrapper">
 			<div class="intro-text">
-				<p class="white">I'm Courtney Mclean, a multi-disciplinary designer with over 8 years of experience crafting beautiful design and interactive websites that focus on simplicity, functionality & empathy. Currently the lead digital designer at <a href="http://hogarthww.com/" class="teal" title="Hogarth Worldwide" target="_blank">Hogarth Worldwide</a>.</p>
+				<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
+				<?php the_content();?>
 			</div>
 		</div><!-- #end intro-wrapper -->
 
@@ -27,7 +27,6 @@ get_header(); ?>
 
 <!-- Latest Blog Post -->
 	<section id="main-content">
-        <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 		<div class="container">
 
 			<?php
@@ -55,10 +54,8 @@ get_header(); ?>
 		<!-- article -->
 			<div class="seven col post">
 				<div class="article">
-					<h3><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h3><?php
-global $more;
-$more = 0;
-?>
+					<h3><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+					<?php global $more;$more = 0; ?>
 					<?php if ( has_post_thumbnail() ) { /* loades the post's featured thumbnail, requires Wordpress 3.0+ */ echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; } ?>
 					<div class="post-content">
 						<?php the_content(__('Continue reading…'));?>
