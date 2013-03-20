@@ -538,8 +538,9 @@
 		border-left:1px solid #dddddd;
 		margin: 0px auto;
 		overflow: auto;
-		padding: 0 0 160px 4em;
+		padding: 0 0 40px 4em;
 		}
+	.singlepost {padding-bottom: 160px;}
 	.post-container:last-child .post{padding-bottom: 0px;}	
 	.post-container:last-child .singlepost{padding-bottom: 60px;}	
 	
