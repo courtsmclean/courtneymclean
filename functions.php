@@ -33,7 +33,7 @@ add_action('admin_head', 'wpfme_adminCSS');
 //create a permalink after the excerpt
 function wpfme_replace_excerpt($content) {
 	return str_replace('[...]',
-		'<br /><a class="readmore" href="'. get_permalink() .'">Continue Reading</a>',
+		'<a class="readmore" href="'. get_permalink() .'">… Continue Reading</a>',
 		$content
 	);
 }
@@ -58,7 +58,7 @@ add_filter('the_content', 'wpfme_remove_img_ptags');
 //custom excerpt length
 function wpfme_custom_excerpt_length( $length ) {
 	//the amount of words to return
-	return 20;
+	return 50;
 }
 add_filter( 'excerpt_length', 'wpfme_custom_excerpt_length');
 

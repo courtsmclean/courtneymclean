@@ -44,13 +44,10 @@ get_header(); ?>
 			<!-- #end date & category -->
 
 			<!-- article -->
-			<div class="seven col singlepost">
+			<div class="eight col singlepost">
 				<div class="article">
-<?php
-global $more;
-$more = 0;
-?>					<div class="post-content">
-						<?php the_content(__('Continue reading…'));?>
+			<div class="post-content">
+						<?php the_content();?>
 						<?php // get post-nav.php (next/prev post link) ?>
 						<?php get_template_part( 'includes/post-nav'); ?>				
 					</div>
