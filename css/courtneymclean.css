@@ -359,30 +359,28 @@
 
 	#home_intro, #introduction {
 		margin: 0;
-		height: 400px;
+		min-height: 260px;
 		padding:0px;
 		overflow: auto;
 		width: 100%;
 		z-index: -1000;
 		}
-	#introduction {height: 260px;}
 	#introduction h1{
 		font-size: 2.5em;
-		margin-top: 20px;
+		text-transform: uppercase;
 		}
 	#intro-wrapper {
 		background: rgba(0,0,0,0.5);
-		min-height: 300px;
-		padding: 90px 0px 110px;
-		position: fixed;
+		margin: 0 auto;
+		padding: 10% 0px 10%;
 		width: 100%;
 		}
 
 	.intro-text {
 		border-top: 1px solid #c9c9c9;
 		margin: 0 auto;
-		margin-top: 50px;
-		padding-top: 20px;
+		margin-top: 20px;
+		padding: 10px 0px;
 		width: 49.16%;
 		max-width: 630px;
 		}
@@ -556,6 +554,7 @@
 	
 	.navigation {
 		margin-bottom: 30px;
+		padding-left: 40px;
 		text-align: left;
 		width: auto;
 		}

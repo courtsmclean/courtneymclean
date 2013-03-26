@@ -16,7 +16,7 @@ get_header(); ?>
 	<!--  Portfolio Section -->
 		<section id="portfolio">
 			<?php the_content(); ?>
-			<?php endwhile; ?>
+<?php $image = get_post_meta($post->ID, 'portfolio_image', true); ?>			<?php endwhile; ?>
 		
 
 

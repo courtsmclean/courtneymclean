@@ -31,38 +31,37 @@ get_header(); ?>
 					<h3><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 					<?php if ( has_post_thumbnail() ) { /* loades the post's featured thumbnail, requires Wordpress 3.0+ */ echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; } ?>
 					<div class="post-content">
+					
 						<?php the_excerpt(); ?>
 					</div>
 			</div>
 		<!-- #end post -->
 
 
-
 		</div><!-- #close container -->
-
-
 		
 		<?php endwhile; ?>
 		<?php endif; ?>
+		
+		
+		   	<!-- page navigation -->
+				
+				<div class="container">
+					<!-- spacer --><div class="three col"></div>
+		
+					<div class="seven col">
+						<div class="navigation">
+		                <?php posts_nav_link(); ?>
+		                </div>
+					</div>
+				</div><!-- #close container -->
+		
+			<!-- #page navigation -->
+
 		</div><!-- #close container -->
 	</div>
 <!-- #end Latest Blog Post -->
 
-
-
-   	<!-- page navigation -->
-		
-		<div class="container">
-			<!-- spacer --><div class="four col"></div>
-
-			<div class="seven col">
-				<div class="navigation">
-                <?php posts_nav_link(); ?>
-                </div>
-			</div>
-		</div><!-- #close container -->
-
-	<!-- #page navigation -->
 
       
                 

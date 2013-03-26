@@ -8,18 +8,20 @@ get_header(); ?>
 
 
 <!-- Introduction -->
-	<section id="introduction">
-		<div id="intro-wrapper" class="black-bg">
+	<section id="introduction" class="blacker-bg">
 
 		<div id="intro_image">
 			<img src="<?php the_field('intro_image'); ?>" class="scale-with-grid" />
 		</div>
 
-
+		<div id="intro-wrapper">
         <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 
+			<h4 class="white"><em><?php the_time(__('j', 'f2')); ?> <?php the_time(__('M', 'f2')); ?> <?php the_time(__('Y', 'f2')); ?></em></h4>
+			<div class="intro-text">
 			<h1 class="white"><?php the_title(); ?></h1>
-
+			</div><!-- #end intro-text -->
+			
 		</div><!-- #end intro-wrapper -->
 	</section>
 <!-- #end introduction -->
