@@ -94,5 +94,8 @@ function ilc_favicon(){
         echo "<link rel='shortcut icon' href='" . get_stylesheet_directory_uri() . "/favicon.ico' />" . "\n";
 }
 
+//For portfolio page
+require_once('portfolio-type.php');
+
 
 ?>
