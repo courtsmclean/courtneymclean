@@ -97,5 +97,4 @@ function ilc_favicon(){
 //For portfolio page
 require_once('portfolio-type.php');
 
-
 ?>

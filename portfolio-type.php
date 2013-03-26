@@ -88,4 +88,31 @@ function project_custom_columns($column){
         }  
 }  
 
+
+function get_post_templates() 
+	{
+		$theme = wp_get_theme();
+
+		// N.B. No caching, even though core Page Templates has that. 
+		// Nacin advises:
+		// "ultimately, "caching" for page templates is not very helpful"
+		// "by default, the themes bucket is non-persistent. also, calling 
+		//  get_page_templates() no longer requires us to load up all theme 
+		//  data for all themes so overall, it's much quicker already."
+
+		$post_templates = array();
+
+		$files = (array) $theme->get_files( 'php', 1 );
+
+		foreach ( $files as $file => $full_path ) {
+			$headers = get_file_data( $full_path, array( 'Template Name Posts' => 'Template Name Posts' ) );
+			if ( empty( $headers['Template Name Posts'] ) )
+				continue;
+			$post_templates[ $file ] = $headers['Template Name Posts'];
+		}
+
+		return $post_templates;
+	}
+
+
 ?>

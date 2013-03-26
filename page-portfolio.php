@@ -20,20 +20,16 @@ query_posts('post_type=portfolio&posts_per_page=9');
 		<section id="portfolio">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<?php
-		$title= str_ireplace('"', '', trim(get_the_title()));
-		$desc= str_ireplace('"', '', trim(get_the_content()));
-	?>	
 
 		<div class="item">
-					<div class="img"><a title="<?=$title?>: <?=$desc?>" rel="lightbox[work]" href="<?php posts_nav_link() ?>"><?php the_post_thumbnail(); ?></a></div>
-					<?php $site= get_post_custom_values('projLink'); 
-						if($site[0] != ""){
-					
-					?>
-						<p><a href="<?=$site[0]?>">Visit the Site</a></p>
-						
-					<?php } ?>
+			<div class="img"><a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
+			<?php $site= get_post_custom_values('projLink'); 
+				if($site[0] != ""){
+			
+			?>
+				<p><a href="<?=$site[0]?>">Visit the Site</a></p>
+				
+			<?php } ?>
 		</div>
 		
 <?php endwhile; endif; ?>
