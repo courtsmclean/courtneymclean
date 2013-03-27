@@ -141,7 +141,7 @@
     </div> 
  */ ?> 
 
-    <!-- spacer --><div class="one col"></div>
+    <!-- spacer --><div class="four col"></div>
 
 <div class="seven col">         
     <div id="comments-form"> 

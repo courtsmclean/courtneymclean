@@ -97,4 +97,22 @@ function ilc_favicon(){
 //For portfolio page
 require_once('portfolio-type.php');
 
+
+
+
+function my_page_css_class($css_class, $page) {
+    if (get_post_type()=='portfolio' || is_page(104)) {
+        if ($page->ID == get_option('page_for_posts')) {
+            foreach ($css_class as $k=>$v) {
+                if ($v=='current_page_parent') unset($css_class[$k]);
+            }
+        }
+        if ($page->ID==104) {
+            $css_class[]='current_page_parent';
+        }
+    }
+    return $css_class;
+}
+add_filter('page_css_class','my_page_css_class',10,2);
+
 ?>

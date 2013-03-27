@@ -296,6 +296,7 @@
 ================================================================================================= */
 .wrapper{}
 .content{ padding: 10px; }
+.centered {margin: 0 auto;}
 
 
 /* #SECTION: Header =============== */
@@ -644,27 +645,72 @@
 
 
 /* #SECTION: Portfolio =============== */
-	#portfolio {}
-	#portfolio p {margin: 0;}
-	#portfolio p img{padding: 0; width:100%;}
-	.portfolio-image img{max-width:100%; max-height:100%;}
-	.portfolio-image p a {opacity: 0.6; border: none;}
-	.portfolio-image p a:hover {opacity: 1;}
-
-	.row-one {overflow: auto; width: 100%;}
-	.row-one .portfolio-image {min-height: 200px; width:100%;}
-	.row-two .portfolio-image {height: 240px;}
-	.row-three .portfolio-image {height: 180px;}
-	.row-four .portfolio-image {height: 100px;}
-
-	#project #main-content{padding-top: 20px; margin-top: 0;}
-	.project {
-		background: white;
-		border: 1px solid #dddddd;
-		margin: 0 auto;
-		padding: 40px 0;
-		width: 80%;
+	#portfolio {padding: 40px 0;}
+	
+	.item {
+	float: left; 
+	background: #000000;
+	width: 32%;
+	margin-right: 2%;
 	}
+
+	.item p {
+		font-size: 1em;
+		letter-spacing: 1px;
+		margin-top: 150px;
+		text-transform: uppercase;
+	}
+
+	.item a:link, .item a:hover{
+	border: none;
+	}
+	
+	.item img { 
+	height:100%;
+	width: 100%;
+	}
+	
+	.item:nth-child(3), .item:nth-child(6) {
+	margin-right: 0;
+	}
+
+	.item a img {
+	display: block;
+	width: 100%;
+	height: auto;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	}
+	
+	.item a {
+	position: relative;
+	display: block;
+	}
+
+	.item a div {
+	position: absolute;
+	z-index: 20;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	color: #fff4cc;
+	text-align: center;
+	background: rgba(11,12,13,.9);
+	opacity: 0;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	transition: all .4s;
+	}
+	
+	.item a:hover div {
+	opacity: 1;
+	}
+
 
 /* #SECTION: Info & Stats =============== */
 	#info {
@@ -704,6 +750,9 @@
 		padding-top: 40px;
 		}
 	
+	
+
+
 	
 /* #SECTION: 404 Page =============== */
 #fourofour p.statistic {font-size: 1.4em !important;}
@@ -1062,36 +1111,6 @@ strong.code {
 	position: relative;
 	top: -2px;
 	
-}
-
-.item{
-float: left; 
-margin: 5px;
-width: 310px;
-background: #EFEFEF;
--moz-border-radius: 7px; 
--webkit-border-radius: 7px; 
-border-radius: 7px; 
-text-align: center;
--moz-box-shadow: 0px 0px 6px #999; 
--webkit-box-shadow: 0px 0px 6px #999; 
-box-shadow: 0px 0px 6px #999; 
-}
-
-.item p{ text-align: left; }
-.item p a{ text-align: left; font-weight: bold; color: #880000; }
-
-
-.item img{ margin-top: 5px; text-align: center; border: 1px solid #000000; max-width: 280px;}
-
-/* self-clear floats */
-
-.group:after {
-	content: "."; 
-    display: block; 
-    height: 0; 
-    clear: both; 
-    visibility: hidden;
 }
 
 

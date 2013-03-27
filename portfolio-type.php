@@ -15,10 +15,12 @@ function portfolio_register() {
         'public' => true,  
         'show_ui' => true,  
         'capability_type' => 'post',  
-        'hierarchical' => false,  
+        'hierarchical' => true,  
         'rewrite' => true,  
-        'supports' => array('title', 'editor', 'thumbnail')  
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'parent' => __( 'Portfolio' ),  
        );  
+       
   
     register_post_type( 'portfolio' , $args );  
 }  

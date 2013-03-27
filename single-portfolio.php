@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name Posts: Portfolio
+Template Name Posts: Project
 */
 
 
@@ -11,7 +11,7 @@ get_header(); ?>
 	<section id="introduction" class="blacker-bg">
 
 		<div id="intro_image">
-			<img src="<?php the_field('intro_image'); ?>" class="scale-with-grid" />
+			<?php the_post_thumbnail(); ?>
 		</div>
 
 		<div id="intro-wrapper">
@@ -32,8 +32,9 @@ get_header(); ?>
 	<div class="container">
 		<div class="post-container">
 
+
 			<!-- article -->
-			<div class="eight col singlepost">
+			<div class="eight col centered">
 				<div class="article">
 			<div class="post-content">
 						<?php the_content();?>
