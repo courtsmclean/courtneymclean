@@ -140,8 +140,6 @@ add_filter('page_css_class','my_page_css_class',10,2);
 				<div class="eight col">
 				
 					This is your main page content
-
-					&nbsp;
 			
 				</div>
 				
@@ -155,7 +153,7 @@ add_filter('page_css_class','my_page_css_class',10,2);
 
 				
 				<div>
-				<div class="twelve col">
+				<div class="twelve col project-images">
 					
 					This is your images content
 									
