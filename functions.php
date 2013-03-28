@@ -115,4 +115,63 @@ function my_page_css_class($css_class, $page) {
 }
 add_filter('page_css_class','my_page_css_class',10,2);
 
+
+   add_filter( 'default_content', 'custom_editor_content' );
+      function custom_editor_content( $content ) {
+         global $current_screen;
+         if ( $current_screen->post_type == 'page') {
+            $content = '
+
+               // TEMPLATE FOR YOUR PAGES
+
+            ';
+         }
+         elseif ( $current_screen->post_type == 'portfolio') {
+            $content = '
+
+				<div class="twelve col">
+					
+					This is your project subtitle
+									
+				</div>
+
+
+				<div>
+				<div class="eight col">
+				
+					This is your main page content
+
+					&nbsp;
+			
+				</div>
+				
+				
+				<div class="three col sidebar">
+				
+					This is your sidebar content
+					
+				</div> 
+				</div>
+
+				
+				<div>
+				<div class="twelve col">
+					
+					This is your images content
+									
+				</div>
+				</div>
+
+
+            ';
+         }
+         else {
+            $content = '
+
+               // TEMPLATE FOR EVERYTHING ELSE
+
+            ';
+         }
+         return $content;
+       }
 ?>

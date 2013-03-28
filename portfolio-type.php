@@ -3,6 +3,7 @@
 if ( function_exists( 'add_theme_support' ) ) { 
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 280, 210, true ); // Normal post thumbnails
+	add_image_size('largethumbnail', 2000, 2000, true);
 	add_image_size( 'screen-shot', 720, 540 ); // Full size screen
 }
 

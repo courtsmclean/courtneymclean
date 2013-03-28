@@ -8,14 +8,13 @@ get_header(); ?>
 
 
 <!-- Introduction -->
-	<section id="introduction" class="blacker-bg">
-
+	<section id="introduction">
+        <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 		<div id="intro_image">
-			<?php the_post_thumbnail(); ?>
+			<?php the_post_thumbnail(largethumbnail); ?>
 		</div>
 
 		<div id="intro-wrapper">
-        <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 
 			<div class="intro-text">
 			<h1 class="white"><?php the_title(); ?></h1>
@@ -30,17 +29,15 @@ get_header(); ?>
 <!-- Latest Blog Post -->
 <section id="single-main-content">
 	<div class="container">
-		<div class="post-container">
+		<div class="portfolio-post-container">
 
 
 			<!-- article -->
-			<div class="eight col centered">
-				<div class="article">
-			<div class="post-content">
-						<?php the_content();?>
-						<?php // get post-nav.php (next/prev post link) ?>
-						<?php get_template_part( 'includes/post-nav'); ?>				
-					</div>
+			<div class="article">
+				<div class="post-content">
+					<?php the_content();?>
+					<?php // get post-nav.php (next/prev post link) ?>
+					<?php get_template_part( 'includes/post-nav'); ?>				
 				</div>
 			</div>
 			<!-- #end article -->

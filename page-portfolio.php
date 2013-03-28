@@ -17,7 +17,7 @@ query_posts('post_type=portfolio&posts_per_page=9');
 	<div class="container">
 
 	<!--  Portfolio Section -->
-		<section id="portfolio">
+		<div id="portfolio">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
@@ -36,7 +36,7 @@ query_posts('post_type=portfolio&posts_per_page=9');
 <?php endwhile; endif; ?>
 		
 
-		</section>
+		</div>
 	<!-- /end Portfolio -->
 
 
