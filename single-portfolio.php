@@ -17,7 +17,6 @@ get_header(); ?>
 		<div id="intro-wrapper">
 
 			<div class="intro-text">
-			<h1 class="white"><?php the_title(); ?></h1>
 			</div><!-- #end intro-text -->
 			
 		</div><!-- #end intro-wrapper -->

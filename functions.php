@@ -130,34 +130,54 @@ add_filter('page_css_class','my_page_css_class',10,2);
             $content = '
 
 				<div class="twelve col">
-					
-					This is your project subtitle
-									
+				
+					<h3>This is your project subtitle</h3>	
+				
 				</div>
 
 
 				<div>
-				<div class="eight col">
-				
-					This is your main page content
-			
-				</div>
-				
-				
-				<div class="three col sidebar">
-				
-					This is your sidebar content
+					<div class="eight col">
 					
-				</div> 
+						This is your intro
+					
+					</div>				
+					<div class="three col sidebar">
+					
+						<h6>APPLIED SKILLS</h6>
+						<ul class="small">
+							<li>list item one</li>
+							<li>list item two</li>
+							<li>list item three</li>
+							<li>list item four</li>
+							<li>list item five</li>
+						</ul>
+					
+					</div> 
 				</div>
-
 				
 				<div>
-				<div class="twelve col project-images">
+					<div class="twelve col project-images">
+						
+						This is your images content
+						&nbsp;
 					
-					This is your images content
-									
+					</div>
 				</div>
+
+				<div>
+					<div class="eight col">
+				
+						This is project result
+						&nbsp;
+				
+					</div>				
+					<div class="three col sidebar">
+				
+						Add button to link to site
+						&nbsp;
+				
+					</div> 
 				</div>
 
 

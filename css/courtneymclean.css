@@ -398,7 +398,9 @@ box-shadow: 0 1px 10px rgba(0,0,0,0.1);
 		padding: 10% 0px 10%;
 		width: 100%;
 		}
-
+	#introduction #intro-wrapper {
+		background: transparent;
+		}
 	.intro-text {
 		border-top: 1px solid #c9c9c9;
 		margin: 0 auto;
@@ -448,6 +450,7 @@ box-shadow: 0 1px 10px rgba(0,0,0,0.1);
 		display: block;
 		height: 200%;
 		left: -50%;
+		top: -10%;
 		position: fixed;
 		width: 200%;
 		z-index: -1000;
@@ -700,7 +703,7 @@ box-shadow: 0 1px 10px rgba(0,0,0,0.1);
 	.item p {
 		font-size: 1em;
 		letter-spacing: 1px;
-		margin-top: 150px;
+		margin-top: 110px;
 		text-transform: uppercase;
 		}
 
@@ -1191,6 +1194,10 @@ strong.code {
 	float: left;
 	}
 
+	#intro_image {
+		top: -50px;
+	}	
+
 }
 
 
@@ -1202,7 +1209,9 @@ strong.code {
 		}
 	.intro-text h1{font-size: 1.8em;}
 	.item {width: 100%;}
-
+	#intro_image {
+		top: 40px;
+	}
 
 }
 
