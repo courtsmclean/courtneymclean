@@ -47,7 +47,6 @@ if ( function_exists( 'add_image_size' ) ) {
 	add_image_size('custombig', 400, 500, true); //wide column
 }
 
-
 // Stop images getting wrapped up in p tags when they get dumped out with the_content() for easier theme styling
 function wpfme_remove_img_ptags($content){
 	return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(\/a>)?\s*<\/p>/iU', '\1\2\3', $content);

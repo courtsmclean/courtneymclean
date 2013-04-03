@@ -22,12 +22,15 @@
 	#Basic Styles
 ================================================================================================= */
 
+	html {margin-top: -28px;}
+
 	body { 
 		background: #1E1E1E;
 		color: #1E1E1E; 
 		font-size: 100%/1.6; 
 		font-family: 'Roboto',Helvetica,Arial,sans-serif; 	
 		margin: 0 auto;
+		margin-top: -28px;
 		padding: 0;
 		text-align: center;
 	}
@@ -77,7 +80,7 @@
 		}
 	h1 { 
 		font-family: 'Roboto',Helvetica,Arial,sans-serif; 	
-		font-size: 1.8em; /* 46px / 16px */ 
+		font-size: 2.4em; /* 46px / 16px */ 
 		font-style: normal;
 		font-weight: 500;
 		letter-spacing: 0.06em;
@@ -86,10 +89,10 @@
 		}
 	h2 { 
 		font-family: 'Roboto',Helvetica,Arial,sans-serif; 	
-		font-size: 1.6em; 
+		font-size: 2.5em; 
 		font-style: normal;
 		font-weight: 300;
-		line-height: 1.6em; 
+		line-height: 1.3em; 
 		margin-bottom: 10px; 
 		}
 	h3 { 
@@ -120,7 +123,10 @@
 		letter-spacing: 2px;
 		margin: 5px 0;
 		}
-	h1 a,h1 a:hover,h3 a,h3 a:hover,h5 a,h5 a:hover {border-bottom: none;}
+	h1 a,h1 a:hover,
+	h2 a,h2 a:hover,
+	h3 a,h3 a:hover,
+	h5 a,h5 a:hover {border-bottom: none;}
 
 
 /* #Extra Header classes =============== */
@@ -133,7 +139,7 @@
 		font-style: normal;
 		font-weight: 300;
 		letter-spacing: 0.02em;
-		line-height: 1.8em;
+		line-height: 1.7em;
 		margin: 0 0 20px 0; 
 		}
 	p a { 
@@ -141,7 +147,7 @@
 		text-decoration: none;	
 		}
 	p img { margin: 0; padding: 1em;}
-	p.small { font-size: 80%; }
+	.small { font-size: 80%; }
 
 	em { 
 		font-style: italic;
@@ -366,7 +372,8 @@ box-shadow: 0 1px 10px rgba(0,0,0,0.1);
 	
 	
 /* #SECTION: Introduction & Latest Post =============== */
-
+	#home_intro {background-color: #000;}
+	.home #home_intro {background-color: transparent;}
 	#home_intro, #introduction {
 		margin: 0;
 		min-height: 260px;
@@ -393,7 +400,7 @@ box-shadow: 0 1px 10px rgba(0,0,0,0.1);
 		transition-timing-function: ease-out;
 		}
 	#intro-wrapper {
-		background: rgba(0,0,0,0.5);
+		background: rgba(0,0,0,0.4);
 		margin: 0 auto;
 		padding: 10% 0px 10%;
 		width: 100%;
@@ -516,7 +523,6 @@ box-shadow: 0 1px 10px rgba(0,0,0,0.1);
 	ul.tag { margin-top: 20px;}
 	ul.tag li {
 		display: inline;
-	 	font-size: 0.9em;
 		font-style: italic;
 		font-weight: 300;
 	 	
@@ -559,10 +565,11 @@ box-shadow: 0 1px 10px rgba(0,0,0,0.1);
 	.post, .singlepost {
 		border-left:1px solid #dddddd;
 		margin: 0px auto;
+		margin-bottom: 40px;
 		overflow: auto;
-		padding: 0 0 40px 4em;
+		padding: 0 0 0px 4em;
 		}
-	.singlepost {padding-bottom: 160px;}
+	.singlepost {padding-bottom: 160px; margin-bottom: 0;}
 	.post-container:last-child .post{padding-bottom: 0px;}	
 	.post-container:last-child .singlepost{padding-bottom: 60px;}	
 	
@@ -596,6 +603,7 @@ box-shadow: 0 1px 10px rgba(0,0,0,0.1);
 	.comment-container {
 		border-top: 1px solid #ddd;
 		}
+	.comment-container h2 {font-size: 1.6em;}
 	#comments, #comments-form {	padding-top: 110px;}
 	.commentlist {}
  
@@ -1203,8 +1211,13 @@ strong.code {
 
 @media only screen and (max-width: 480px) {
 	
+	p {font-size: 1em;}
+	h2 {font-size: 1.8em;}
+	#main-content {padding-top: 80px;}
+	.post-container {border-bottom: 1px solid #cccccc; padding: 30px 0 0;}
+	#home-intro {max-height: 340px;}
 	.intro-text {
-		margin-top: 22%; 
+		margin-top: 12%; 
 		width: 80%;
 		}
 	.intro-text h1{font-size: 1.8em;}

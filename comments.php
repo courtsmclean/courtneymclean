@@ -1,23 +1,6 @@
 <div class="comment-container white-bg">
 <div class="container">
 
-<?php  
-/*     This is comment.phps by Christian Montoya, http://www.christianmontoya.com 
-
-    Available to you under the do-whatever-you-want license. If you like it,  
-    you are totally welcome to link back to me.  
-     
-    Use of this code does not grant you the right to use the design or any of the  
-    other files on my site. Beyond this file, all rights are reserved, unless otherwise noted.  
-     
-    Enjoy! 
-*/ 
-?> 
-
-<!-- Comments code provided by christianmontoya.com --> 
-
-
-
 <?php if (!empty($post->post_password) && $_COOKIE['wp-postpass_'.COOKIEHASH]!=$post->post_password) : ?> 
     <p id="comments-locked">Enter your password to view comments.</p> 
 <?php return; endif; ?> 
@@ -141,7 +124,7 @@
     </div> 
  */ ?> 
 
-    <!-- spacer --><div class="four col"></div>
+    <!-- spacer --><div class="one col"></div>
 
 <div class="seven col">         
     <div id="comments-form"> 

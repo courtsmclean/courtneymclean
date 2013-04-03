@@ -8,14 +8,13 @@ get_header(); ?>
 
 
 <!-- Introduction -->
-	<section id="introduction" class="blacker-bg">
-
+	<section id="home-intro">
+        <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 		<div id="intro_image">
-			<img src="<?php the_field('intro_image'); ?>" class="scale-with-grid" />
+			<?php the_post_thumbnail(largethumbnail); ?>
 		</div>
 
 		<div id="intro-wrapper">
-        <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 
 			<h4 class="white"><em><?php the_time(__('j', 'f2')); ?> <?php the_time(__('M', 'f2')); ?> <?php the_time(__('Y', 'f2')); ?></em></h4>
 			<div class="intro-text">
@@ -38,7 +37,7 @@ get_header(); ?>
 				<div class="date-category">
 					<h5><a href="<?php echo get_month_link(get_the_time('Y'), get_the_time('m')); ?>"><?php the_time(__('j', 'f2')); ?> <?php the_time(__('M', 'f2')); ?> <?php the_time(__('Y', 'f2')); ?></a></h5>
 					<ul class="tag">
-					<li><a href="" class="category-link"><?php the_category(', ') ?></a></li>
+					<li class="small"><?php the_category(', ') ?></li>
 					</ul>
 				</div>	
 				<p class="small"><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></p>

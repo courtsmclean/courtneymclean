@@ -19,7 +19,7 @@ get_header(); ?>
 					<div class="date-category">
 						<h5><a href="<?php echo get_month_link(get_the_time('Y'), get_the_time('m')); ?>"><?php the_time(__('j', 'f2')); ?> <?php the_time(__('M', 'f2')); ?> <?php the_time(__('Y', 'f2')); ?></a></h5>
 						<ul class="tag">
-						<li><a href="" class="category-link"><?php the_category(', ') ?></a></li>
+						<li class="small"><?php the_category(', ') ?></li>
 						</ul>
 					</div>	
 					<p class="small"><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></p>
@@ -28,8 +28,8 @@ get_header(); ?>
 
 		<!-- post -->
 				<div class="seven col post">
-					<h3><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-					<?php if ( has_post_thumbnail() ) { /* loades the post's featured thumbnail, requires Wordpress 3.0+ */ echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; } ?>
+					<h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+					<?php //if ( has_post_thumbnail() ) { /* loades the post's featured thumbnail, requires Wordpress 3.0+ */ echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; } ?>
 					<div class="post-content">
 					
 						<?php the_excerpt(); ?>
