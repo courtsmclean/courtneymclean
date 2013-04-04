@@ -22,8 +22,6 @@
 	#Basic Styles
 ================================================================================================= */
 
-	html {margin-top: -28px;}
-
 	body { 
 		background: #1E1E1E;
 		color: #1E1E1E; 
@@ -213,7 +211,7 @@
 	ul.large li { line-height: 21px; }
 	li p { line-height: 21px; }
 
-	ul.small {margin-top: 20px;}
+	ul.skills {margin-top: 20px;}
 	ul.small li { 
 		font-size: 80%; 
 		line-height: 80%;

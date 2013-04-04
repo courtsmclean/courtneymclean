@@ -128,9 +128,9 @@ add_filter('page_css_class','my_page_css_class',10,2);
          elseif ( $current_screen->post_type == 'portfolio') {
             $content = '
 
-				<div class="twelve col">
+				<div class="eleven col">
 				
-					<h3>This is your project subtitle</h3>	
+					<h2>This is your project subtitle</h2>	
 				
 				</div>
 
@@ -144,7 +144,7 @@ add_filter('page_css_class','my_page_css_class',10,2);
 					<div class="three col sidebar">
 					
 						<h6>APPLIED SKILLS</h6>
-						<ul class="small">
+						<ul class="skills">
 							<li>list item one</li>
 							<li>list item two</li>
 							<li>list item three</li>
