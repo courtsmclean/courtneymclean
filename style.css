@@ -11,9 +11,8 @@ Tags: Comma-separated tags that describe your theme
  
 */
 
-
-@import url('css/columns.css');
-@import url('css/courtneymclean.css');
+@import url('css/columns.min.css');
+@import url('css/courtneymclean.min.css');
  
 /* All three CSS files above will be loaded from
    this single document. */

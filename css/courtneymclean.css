@@ -179,7 +179,7 @@
 		}
 	p a:hover { 
 		color: #1E1E1E;
-		border-bottom: 1px dotted #1E1E1E;
+		border-bottom: 1px solid #1E1E1E;
 		}
 
 
@@ -400,7 +400,7 @@
 	#intro-wrapper {
 		background: rgba(0,0,0,0.4);
 		margin: 0 auto;
-		padding: 10% 0px 10%;
+		padding: 8% 0px 8%;
 		width: 100%;
 		}
 	#introduction #intro-wrapper {
@@ -1177,11 +1177,13 @@ strong.code {
 	.page-template-front-page-php #home_intro, .stats {
 		display: none;
 	}
+	#home_intro, #introduction {min-height: 240px;}
 	.intro-text {
 		margin-top: 8%;
 		width: 80%;
 		}
 	.intro-text h1{font-size: 2em;}
+	#intro_image {padding: 14% 0px 10%;top: -10px;}
 
 	.post {
 		border: none;
@@ -1199,10 +1201,6 @@ strong.code {
 	float: left;
 	}
 
-	#intro_image {
-		top: -50px;
-	}	
-
 }
 
 
@@ -1212,7 +1210,7 @@ strong.code {
 	h2 {font-size: 1.8em;}
 	#main-content {padding-top: 80px;}
 	.post-container {border-bottom: 1px solid #cccccc; padding: 30px 0 0;}
-	#home-intro {max-height: 340px;}
+	#home_intro, #introduction {min-height: 240px;}
 	.intro-text {
 		margin-top: 12%; 
 		width: 80%;
