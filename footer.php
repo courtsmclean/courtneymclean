@@ -3,7 +3,7 @@
 	<footer class="black-bg">
 		<div class="container">
 			<h1>I'm currently accepting freelance projects,<br /> so feel free to drop me a line</h1>
-				<a href="" class="button teal" title="">Get in Touch</a>
+				<a href="mailto:hello@courtneymclean.co.uk" class="button teal" title="">Get in Touch</a>
 			<nav role="navigation">
 				<ul class="social-links">
 				    <li id="twitter"><a href="https://twitter.com/courtsmclean" target="_blank"></a></li>
