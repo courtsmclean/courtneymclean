@@ -18,8 +18,6 @@
 
 	<!-- Meta descriptions -->
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="description" content="This is the home of graphic designer Courtney Mclean.">
-	<meta name="keywords" content="graphic design, front-end, developer, responsive, grid, system, web design">
 	<meta name="author" content="www.courtneymclean.co.uk">
 	<meta http-equiv="cleartype" content="on">
 	<link rel="shortcut icon" href="<?php echo THEME_DIR; ?>/path/favicon.ico" /> 
